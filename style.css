@@ -9,7 +9,7 @@ body {
 header {
     text-align: center;
     padding: 20px 0;
-    background-color: white; /* ensure white background */
+    background-color: white;
 }
 
 .header-text {
@@ -17,56 +17,48 @@ header {
     font-weight: bold;
     font-style: italic;
     font-size: 24px;
+    margin-bottom: 20px;
 }
 
-/* Style release items */
+nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #f7f7f7;
+}
+
 .release {
     display: flex;
     align-items: center;
     padding: 10px;
 }
 
-.release img:not(.loudspeaker-icon) {
-    max-width: 150px; /* Adjusted size */
+.release img {
+    max-width: 150px;
     margin-right: 10px;
 }
 
 .release-info {
     flex: 1;
-    font-family: 'Courier New', Courier, monospace; /* Using Courier font */
+    font-family: 'Courier New', Courier, monospace;
 }
 
-.release-title {
-    font-weight: bold;
-}
-
-.release-artist {
-    font-style: italic;
-}
-
-.release-genre {
-    margin-top: 5px;
-}
-
+.release-title,
+.release-artist,
+.release-genre,
 .release-link {
-    margin-top: 10px;
-    display: flex;
-    align-items: center;
+    display: block;
+    margin-bottom: 5px;
 }
 
-.loudspeaker-icon {
-    width: 24px; /* Adjust the size as needed */
-    height: auto;
-    margin-left: 10px; /* Space from the Genre */
-    border: none;
-    background-color: white;
-    padding: 0;
-    cursor: pointer;
-}
-
-/* Grid for releases */
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adaptive grid */
-    gap: 20px; /* Spacing between grid items */
+    grid-template-columns: repeat(5, 1fr); 
+    gap: 20px;
 }
