@@ -82,3 +82,14 @@ nav a:hover {
 .links-container a:hover {
     text-decoration: underline;
 }
+
+.header-text a {
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+}
+
+.header-text a:hover {
+    color: gray; /* or any other color for hover effect */
+}
+
