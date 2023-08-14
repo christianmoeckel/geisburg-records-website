@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     color: black;
     background-color: white;
     margin: 0;
@@ -17,48 +17,50 @@ header {
     font-weight: bold;
     font-style: italic;
     font-size: 24px;
-    margin-bottom: 20px;
 }
 
 nav a {
-    margin: 0 10px;
+    margin: 0 15px;
     text-decoration: none;
     color: black;
-    padding: 5px 10px;
-    border-radius: 5px;
-    transition: background-color 0.3s;
 }
 
 nav a:hover {
-    background-color: #f7f7f7;
-}
-
-.release {
-    display: flex;
-    align-items: center;
-    padding: 10px;
-}
-
-.release img {
-    max-width: 150px;
-    margin-right: 10px;
-}
-
-.release-info {
-    flex: 1;
-    font-family: 'Courier New', Courier, monospace;
-}
-
-.release-title,
-.release-artist,
-.release-genre,
-.release-link {
-    display: block;
-    margin-bottom: 5px;
+    text-decoration: underline;
 }
 
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(5, 1fr); 
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
+    padding: 20px;
+}
+
+.release img {
+    width: 100%;
+    max-width: 300px;
+    display: block;
+    margin: 0 auto;
+}
+
+.release-info {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.release-title {
+    font-weight: bold;
+}
+
+.release-artist {
+    font-style: italic;
+}
+
+.release-genre {
+    margin-top: 5px;
+}
+
+.release-link {
+    margin-top: 10px;
+    display: block;
 }
