@@ -1,5 +1,5 @@
 body {
-    font-family: 'Lofi 90s', sans-serif;
+    font-family: 'Arial', sans-serif;
     color: black;
     background-color: white;
     margin: 0;
@@ -9,38 +9,52 @@ body {
 header {
     text-align: center;
     padding: 20px 0;
+    background-color: #f1f1f1;
+    border-bottom: 1px solid #ccc;
 }
 
 .header-text {
     font-family: 'Arial Black', sans-serif;
     font-weight: bold;
     font-style: italic;
-    font-size: 24px;
+    font-size: 32px;
 }
 
-/* Style release items */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 .release {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    border: 1px solid #ccc;
     padding: 10px;
-    border-bottom: 1px solid #ccc;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .release img {
-    max-width: 100px;
-    margin-right: 10px;
+    width: 90%;
+    margin: 10px auto;
 }
 
 .release-info {
     flex: 1;
+    text-align: center;
 }
 
 .release-title {
     font-weight: bold;
+    margin-top: 10px;
 }
 
 .release-artist {
     font-style: italic;
+    margin-top: 5px;
 }
 
 .release-genre {
@@ -50,4 +64,14 @@ header {
 .release-link {
     margin-top: 10px;
     display: block;
+    text-decoration: none;
+    background-color: #000;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.release-link:hover {
+    background-color: #333;
 }
