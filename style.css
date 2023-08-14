@@ -1,5 +1,5 @@
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: Arial, sans-serif;
     color: black;
     background-color: white;
     margin: 0;
@@ -9,52 +9,39 @@ body {
 header {
     text-align: center;
     padding: 20px 0;
-    background-color: #f1f1f1;
-    border-bottom: 1px solid #ccc;
+    background-color: white; /* ensure white background */
 }
 
 .header-text {
     font-family: 'Arial Black', sans-serif;
     font-weight: bold;
     font-style: italic;
-    font-size: 32px;
+    font-size: 24px;
 }
 
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 15px;
-    padding: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
+/* Style release items */
 .release {
     display: flex;
-    flex-direction: column;
-    border: 1px solid #ccc;
+    align-items: center;
     padding: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.release img {
-    width: 90%;
-    margin: 10px auto;
+.release img:not(.loudspeaker-icon) {
+    max-width: 150px; /* Adjusted size */
+    margin-right: 10px;
 }
 
 .release-info {
     flex: 1;
-    text-align: center;
+    font-family: 'Courier New', Courier, monospace; /* Using Courier font */
 }
 
 .release-title {
     font-weight: bold;
-    margin-top: 10px;
 }
 
 .release-artist {
     font-style: italic;
-    margin-top: 5px;
 }
 
 .release-genre {
@@ -63,15 +50,23 @@ header {
 
 .release-link {
     margin-top: 10px;
-    display: block;
-    text-decoration: none;
-    background-color: #000;
-    color: #fff;
-    padding: 5px 10px;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
 }
 
-.release-link:hover {
-    background-color: #333;
+.loudspeaker-icon {
+    width: 24px; /* Adjust the size as needed */
+    height: auto;
+    margin-left: 10px; /* Space from the Genre */
+    border: none;
+    background-color: white;
+    padding: 0;
+    cursor: pointer;
+}
+
+/* Grid for releases */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adaptive grid */
+    gap: 20px; /* Spacing between grid items */
 }
