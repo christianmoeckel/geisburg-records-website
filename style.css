@@ -41,6 +41,8 @@ nav a:hover {
     max-width: 300px;
     display: block;
     margin: 0 auto;
+    margin-bottom: 15px; /* Increase space between cover and text */
+
 }
 
 .release-info {
@@ -88,9 +90,11 @@ body, a, h2, p {
 }
 
 .header-text a {
-    text-decoration: none;
-    color: black;
-    display: inline-block;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: none; /* To remove the default underline of hyperlinks */
+    color: inherit; /* To inherit the font color and not use the default blue for links */
 }
 
 .header-text a:hover {
