@@ -64,3 +64,21 @@ nav a:hover {
     margin-top: 10px;
     display: block;
 }
+
+.links-container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.links-container a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
+.links-container a:hover {
+    text-decoration: underline;
+}
