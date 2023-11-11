@@ -31,9 +31,11 @@ nav a:hover {
 
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+    gap: 20px; /* Adjust as needed */
     padding: 20px;
+    margin: auto; /* Center the grid container */
+    max-width: 1200px; /* Adjust based on your content size */
 }
 
 .release img {
@@ -119,28 +121,3 @@ body, a, h2, p {
 .release-info .release-genre {
     font-size: 1.2em; /* Increased text size */
 }
-
-<style>
-    .sib-form-container {
-        font-family: Arial, sans-serif;
-        color: black; /* Your website's text color */
-    }
-
-    .sib-form-block {
-        color: black; /* Consistent with your website's text color */
-    }
-
-    .sib-form-block__button {
-        background-color: #4CAF50; /* Example color, adjust as needed */
-        color: white; /* Button text color */
-        border-radius: 5px;
-        /* Add any other button styles as needed */
-    }
-
-    .sib-input input {
-        font-family: Arial, sans-serif;
-        /* Add styles for form input fields to match your website's design */
-    }
-
-    /* Other custom styles to match your site */
-</style>
