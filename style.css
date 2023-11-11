@@ -10,6 +10,7 @@ header {
     text-align: center;
     padding: 20px 0;
     background-color: white;
+    margin: auto; /* Center the grid container */
 }
 
 .header-text {
@@ -17,6 +18,7 @@ header {
     font-weight: bold;
     font-style: italic;
     font-size: 24px;
+    margin: auto; /* Center the grid container */
 }
 
 nav a {
@@ -108,11 +110,11 @@ body, a, h2, p {
 /* Custom styles for release spacing and sizing */
 .release {
     margin-bottom: 30px; /* Increased vertical spacing */
-    width: 70%; /* Decreased horizontal width */
+    width: 80%; /* Decreased horizontal width */
 }
 
 .release img {
-    width: 350pxpx; /* Increased cover size */
+    width: 380pxpx; /* Increased cover size */
     height: auto; /* Maintain aspect ratio */
 }
 
