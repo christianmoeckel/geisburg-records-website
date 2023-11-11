@@ -101,3 +101,21 @@ body, a, h2, p {
     color: gray; /* or any other color for hover effect */
 }
 
+
+
+/* Custom styles for release spacing and sizing */
+.release {
+    margin-bottom: 30px; /* Increased vertical spacing */
+    width: 70%; /* Decreased horizontal width */
+}
+
+.release img {
+    width: 150px; /* Increased cover size */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.release-info .release-title,
+.release-info .release-artist,
+.release-info .release-genre {
+    font-size: 1.2em; /* Increased text size */
+}
