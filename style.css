@@ -110,7 +110,7 @@ body, a, h2, p {
 }
 
 .release img {
-    width: 150px; /* Increased cover size */
+    width: 300pxpx; /* Increased cover size */
     height: auto; /* Maintain aspect ratio */
 }
 
