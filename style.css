@@ -1,5 +1,5 @@
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Courier New', Courier, monospace;
     color: black;
     background-color: white;
     margin: 0;
@@ -54,4 +54,8 @@ nav a:hover {
 
 .grid-container {
     display: grid;
-    grid-template
+    grid-template-columns: repeat(3, 1fr); /* 3 equal columns on desktop */
+    gap: 20px; /* Adjust as needed */
+    padding: 20px;
+    margin: auto;
+    max
