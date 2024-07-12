@@ -23,6 +23,16 @@ header {
     margin: 5px auto;
 }
 
+
+.release img {
+    width: 100%;
+    max-width: 300px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 15px; /* Increase space between cover and text */
+
+}
+
 .header-text {
     font-family: 'Arial Black', sans-serif;
     font-weight: bold;
