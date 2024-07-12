@@ -57,5 +57,4 @@ nav a:hover {
     grid-template-columns: repeat(3, 1fr); /* 3 equal columns on desktop */
     gap: 20px; /* Adjust as needed */
     padding: 20px;
-    margin: auto;
-    max
+    max-width: 1200px; /* Adjust based on your content size */
