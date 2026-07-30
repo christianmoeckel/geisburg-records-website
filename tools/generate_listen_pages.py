@@ -12,6 +12,8 @@ import json
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
+import hashlib as _h
+CSSV = _h.md5((ROOT / "style.css").read_bytes()).hexdigest()[:8]
 
 # Christians Reihenfolge (30.07. nachts): Spotify, Apple Music, Bandcamp, SoundCloud — dann Rest
 SERVICES = [
@@ -43,7 +45,7 @@ def main():
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../style.css?v={CSSV}">
     <title>{html.escape(r['title'])} — {html.escape(r['artist'])} | GEISBURG RECORDS</title>
 </head>
 

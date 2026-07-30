@@ -18,6 +18,8 @@ import urllib.request
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
+import hashlib as _h
+CSSV = _h.md5((ROOT / "style.css").read_bytes()).hexdigest()[:8]
 BC = "https://geisburgrecords.bandcamp.com"
 
 
@@ -91,7 +93,7 @@ def main():
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?v={CSSV}">
     <title>GEISBURG RECORDS</title>
 </head>
 
