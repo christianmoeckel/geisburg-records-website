@@ -239,7 +239,8 @@
       "applemusic": "https://music.apple.com/de/song/1823677063",
       "isrc": "CH6542548582",
       "deezer": "https://www.deezer.com/track/3437809011",
-      "bandcamp_url": "https://geisburgrecords.bandcamp.com/track/let-it-die-feat-bland-pale"
+      "bandcamp_url": "https://geisburgrecords.bandcamp.com/track/let-it-die-feat-bland-pale",
+      "soundcloud": "https://soundcloud.com/geisburgrecords/let-it-die-feat-bland-pale"
     },
     {
       "title": "Kieler Sprotte (Instrumental)",
@@ -413,7 +414,8 @@
       "slug": "wintergarten",
       "isrc": "QZMEQ2416138",
       "deezer": "https://www.deezer.com/track/3150788881",
-      "bandcamp_url": "https://geisburgrecords.bandcamp.com/track/wintergarten-feat-shlomes"
+      "bandcamp_url": "https://geisburgrecords.bandcamp.com/track/wintergarten-feat-shlomes",
+      "soundcloud": "https://soundcloud.com/geisburgrecords/wintergarten-feat-shlomes"
     },
     {
       "title": "23 Grad",
@@ -425,7 +427,8 @@
       "slug": "23-grad",
       "isrc": "QZK6K2443550",
       "deezer": "https://www.deezer.com/track/2876193472",
-      "bandcamp_url": "https://geisburgrecords.bandcamp.com/track/23-grad-feat-marieke"
+      "bandcamp_url": "https://geisburgrecords.bandcamp.com/track/23-grad-feat-marieke",
+      "soundcloud": "https://soundcloud.com/geisburgrecords/23-grad-feat-marieke"
     },
     {
       "title": "Lautlos",
@@ -437,7 +440,8 @@
       "slug": "lautlos",
       "isrc": "QZHN92461112",
       "deezer": "https://www.deezer.com/track/2876193492",
-      "bandcamp_url": "https://geisburgrecords.bandcamp.com/track/lautlos-feat-dj-krille"
+      "bandcamp_url": "https://geisburgrecords.bandcamp.com/track/lautlos-feat-dj-krille",
+      "soundcloud": "https://soundcloud.com/geisburgrecords/lautlos-feat-dj-krille"
     },
     {
       "title": "call me",
