@@ -13,10 +13,11 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 
+# Christians Reihenfolge (30.07. nachts): Spotify, Apple Music, Bandcamp, SoundCloud — dann Rest
 SERVICES = [
-    ("bandcamp_url", "Bandcamp"),
     ("spotify", "Spotify"),
     ("applemusic", "Apple Music"),
+    ("bandcamp_url", "Bandcamp"),
     ("soundcloud", "SoundCloud"),
     ("deezer", "Deezer"),
     ("youtube", "YouTube"),
@@ -47,23 +48,16 @@ def main():
 </head>
 
 <body>
-    <header>
-        <div class="logo-container">
-            <a href="../index.html"><img src="../assets/logo-upscaled-hochgeschoben.png" alt="Geisburg Records"></a>
-        </div>
-    </header>
     <main class="listen-page">
+        <div class="listen-title">{html.escape(r['title'])}</div>
+        <div class="listen-artist">{html.escape(r['artist'])}</div>
         <img class="listen-cover" src="../{html.escape(r['cover'])}" alt="Cover">
-        <div class="release-info">
-            <div class="release-title">{html.escape(r['title'])}</div>
-            <div class="release-artist">{html.escape(r['artist'])}</div>
-        </div>
         <div class="listen-buttons">
 {buttons}
         </div>
     </main>
     <div class="impressum">
-        <p>info@geisburgrecords.com</p>
+        <p><a class="listen-home" href="../index.html">GEISBURG RECORDS</a></p>
     </div>
 </body>
 
