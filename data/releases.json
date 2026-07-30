@@ -9,7 +9,8 @@
       "songlink": "https://song.link/de/i/6774253809",
       "applemusic": "https://geo.music.apple.com/de/album/_/6774253807?i=6774253809&mt=1&app=music&ls=1&at=1000lHKX&ct=api_http&itscg=30200&itsct=odsl_m",
       "slug": "mind-s-eye",
-      "bandcamp_url": "https://geisburgrecords.bandcamp.com/track/minds-eye"
+      "bandcamp_url": "https://geisburgrecords.bandcamp.com/track/minds-eye",
+      "soundcloud": "https://soundcloud.com/geisburgrecords/minds-eye"
     },
     {
       "title": "HIMMEL, BABY",
@@ -21,7 +22,8 @@
       "slug": "himmel-baby",
       "isrc": "CH6542686954",
       "deezer": "https://www.deezer.com/track/4038151941",
-      "bandcamp_url": "https://geisburgrecords.bandcamp.com/track/himmel-baby"
+      "bandcamp_url": "https://geisburgrecords.bandcamp.com/track/himmel-baby",
+      "soundcloud": "https://soundcloud.com/geisburgrecords/himmel-baby"
     },
     {
       "title": "Die Welt ist gestreckt",
@@ -43,7 +45,8 @@
       "slug": "in-my-dreamz",
       "isrc": "CH6542664586",
       "deezer": "https://www.deezer.com/track/3968244681",
-      "bandcamp_url": "https://geisburgrecords.bandcamp.com/track/in-my-dreamz"
+      "bandcamp_url": "https://geisburgrecords.bandcamp.com/track/in-my-dreamz",
+      "soundcloud": "https://soundcloud.com/geisburgrecords/in-my-dreamz"
     },
     {
       "title": "I Still Slay",
@@ -53,7 +56,8 @@
       "songlink": "https://song.link/de/i/6762801280",
       "applemusic": "https://geo.music.apple.com/de/album/_/1895018278?i=6762801280&mt=1&app=music&ls=1&at=1000lHKX&ct=api_http&itscg=30200&itsct=odsl_m",
       "slug": "i-still-slay",
-      "bandcamp_url": "https://geisburgrecords.bandcamp.com/track/i-still-slay"
+      "bandcamp_url": "https://geisburgrecords.bandcamp.com/track/i-still-slay",
+      "soundcloud": "https://soundcloud.com/geisburgrecords/i-still-slay"
     },
     {
       "title": "Kino",
@@ -77,7 +81,8 @@
       "slug": "heaven",
       "isrc": "CH6542633821",
       "deezer": "https://www.deezer.com/track/3866641351",
-      "bandcamp_url": "https://geisburgrecords.bandcamp.com/track/heaven-2"
+      "bandcamp_url": "https://geisburgrecords.bandcamp.com/track/heaven-2",
+      "soundcloud": "https://soundcloud.com/geisburgrecords/heaven"
     },
     {
       "title": "CHECK IN",
@@ -123,7 +128,8 @@
       "slug": "slow-pace",
       "isrc": "CH6542591584",
       "deezer": "https://www.deezer.com/track/3637356242",
-      "bandcamp_url": "https://geisburgrecords.bandcamp.com/track/slow-pace"
+      "bandcamp_url": "https://geisburgrecords.bandcamp.com/track/slow-pace",
+      "soundcloud": "https://soundcloud.com/geisburgrecords/slow-pace"
     },
     {
       "title": "Baum",
@@ -146,7 +152,8 @@
       "slug": "lugen-an-die-wand",
       "isrc": "DEXO12504584",
       "deezer": "https://www.deezer.com/track/3865308361",
-      "bandcamp_url": "https://geisburgrecords.bandcamp.com/track/l-gen-an-die-wand-2"
+      "bandcamp_url": "https://geisburgrecords.bandcamp.com/track/l-gen-an-die-wand-2",
+      "soundcloud": "https://soundcloud.com/geisburgrecords/luegen-an-die-wand"
     },
     {
       "title": "Palo Santo",
@@ -158,7 +165,8 @@
       "slug": "palo-santo",
       "isrc": "DEXN92531995",
       "deezer": "https://www.deezer.com/track/3865308341",
-      "bandcamp_url": "https://geisburgrecords.bandcamp.com/track/palo-santo-2"
+      "bandcamp_url": "https://geisburgrecords.bandcamp.com/track/palo-santo-2",
+      "soundcloud": "https://soundcloud.com/geisburgrecords/palo-santo"
     },
     {
       "title": "U.N.I.",
@@ -170,7 +178,8 @@
       "slug": "u-n-i",
       "isrc": "DEXN92561062",
       "deezer": "https://www.deezer.com/track/3865308351",
-      "bandcamp_url": "https://geisburgrecords.bandcamp.com/track/u-n-i-2"
+      "bandcamp_url": "https://geisburgrecords.bandcamp.com/track/u-n-i-2",
+      "soundcloud": "https://soundcloud.com/geisburgrecords/u-n-i"
     },
     {
       "title": "BNICE2URFRIENDS",
@@ -191,7 +200,8 @@
       "slug": "hitch-a-ride",
       "isrc": "DEXN92510724",
       "deezer": "https://www.deezer.com/track/3866640371",
-      "bandcamp_url": "https://geisburgrecords.bandcamp.com/track/hitch-a-ride-2"
+      "bandcamp_url": "https://geisburgrecords.bandcamp.com/track/hitch-a-ride-2",
+      "soundcloud": "https://soundcloud.com/geisburgrecords/hitch-a-ride"
     },
     {
       "title": "April 29th",
@@ -203,7 +213,8 @@
       "slug": "april-29th",
       "isrc": "DEXN82589419",
       "deezer": "https://www.deezer.com/track/3865308331",
-      "bandcamp_url": "https://geisburgrecords.bandcamp.com/track/april-29th-2"
+      "bandcamp_url": "https://geisburgrecords.bandcamp.com/track/april-29th-2",
+      "soundcloud": "https://soundcloud.com/geisburgrecords/april-29th"
     },
     {
       "title": "Panama Outro",
@@ -215,7 +226,8 @@
       "slug": "panama-outro",
       "isrc": "DEXN82543782",
       "deezer": "https://www.deezer.com/track/3865308321",
-      "bandcamp_url": "https://geisburgrecords.bandcamp.com/track/panama-outro-2"
+      "bandcamp_url": "https://geisburgrecords.bandcamp.com/track/panama-outro-2",
+      "soundcloud": "https://soundcloud.com/geisburgrecords/panama-outro"
     },
     {
       "title": "Let It Die",
@@ -261,7 +273,8 @@
       "slug": "end-of-the-world",
       "isrc": "DEVU52587201",
       "deezer": "https://www.deezer.com/track/3865308311",
-      "bandcamp_url": "https://geisburgrecords.bandcamp.com/track/end-of-the-world-2"
+      "bandcamp_url": "https://geisburgrecords.bandcamp.com/track/end-of-the-world-2",
+      "soundcloud": "https://soundcloud.com/geisburgrecords/end-of-the-world"
     },
     {
       "title": "sold on the street",
@@ -374,7 +387,8 @@
       "slug": "head-start",
       "isrc": "QZK6L2490799",
       "deezer": "https://www.deezer.com/track/3151129461",
-      "bandcamp_url": "https://geisburgrecords.bandcamp.com/track/head-start"
+      "bandcamp_url": "https://geisburgrecords.bandcamp.com/track/head-start",
+      "soundcloud": "https://soundcloud.com/geisburgrecords/head-start"
     },
     {
       "title": "win this time",
@@ -386,7 +400,8 @@
       "slug": "win-this-time",
       "isrc": "QZHN62454646",
       "deezer": "https://www.deezer.com/track/3130610541",
-      "bandcamp_url": "https://geisburgrecords.bandcamp.com/track/win-this-time-2"
+      "bandcamp_url": "https://geisburgrecords.bandcamp.com/track/win-this-time-2",
+      "soundcloud": "https://soundcloud.com/geisburgrecords/win-this-time"
     },
     {
       "title": "Wintergarten",
@@ -434,7 +449,8 @@
       "slug": "call-me",
       "isrc": "QZFZ62490655",
       "deezer": "https://www.deezer.com/track/3130610561",
-      "bandcamp_url": "https://geisburgrecords.bandcamp.com/track/call-me"
+      "bandcamp_url": "https://geisburgrecords.bandcamp.com/track/call-me",
+      "soundcloud": "https://soundcloud.com/geisburgrecords/call-me"
     },
     {
       "title": "11 in the morning",
@@ -446,7 +462,8 @@
       "slug": "11-in-the-morning",
       "isrc": "QZTBB2301861",
       "deezer": "https://www.deezer.com/track/3130610551",
-      "bandcamp_url": "https://geisburgrecords.bandcamp.com/track/11-in-the-morning"
+      "bandcamp_url": "https://geisburgrecords.bandcamp.com/track/11-in-the-morning",
+      "soundcloud": "https://soundcloud.com/geisburgrecords/11-in-the-morning-1"
     },
     {
       "title": "tv jingle",
@@ -458,7 +475,8 @@
       "slug": "tv-jingle",
       "isrc": "QZTAX2267875",
       "deezer": "https://www.deezer.com/track/3150775641",
-      "bandcamp_url": "https://geisburgrecords.bandcamp.com/track/tv-jingle"
+      "bandcamp_url": "https://geisburgrecords.bandcamp.com/track/tv-jingle",
+      "soundcloud": "https://soundcloud.com/geisburgrecords/tv-jingle"
     },
     {
       "title": "Cannonball",
@@ -498,7 +516,8 @@
       "slug": "ballon",
       "isrc": "QZTB42390959",
       "deezer": "https://www.deezer.com/track/3150775731",
-      "bandcamp_url": "https://geisburgrecords.bandcamp.com/track/ballon"
+      "bandcamp_url": "https://geisburgrecords.bandcamp.com/track/ballon",
+      "soundcloud": "https://soundcloud.com/geisburgrecords/ballon-1"
     },
     {
       "title": "i can't stand the light",
@@ -510,7 +529,8 @@
       "slug": "i-can-t-stand-the-light",
       "isrc": "QZDA82264712",
       "deezer": "https://www.deezer.com/track/3130610571",
-      "bandcamp_url": "https://geisburgrecords.bandcamp.com/track/i-cant-stand-the-light"
+      "bandcamp_url": "https://geisburgrecords.bandcamp.com/track/i-cant-stand-the-light",
+      "soundcloud": "https://soundcloud.com/geisburgrecords/i-cant-stand-the-light"
     },
     {
       "title": "Fire EP",
