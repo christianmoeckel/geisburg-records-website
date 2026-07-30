@@ -59,7 +59,7 @@ def main():
         </div>
     </main>
     <div class="impressum">
-        <p><a class="listen-home" href="../index.html">GEISBURG RECORDS</a></p>
+        <a href="../index.html"><img class="listen-footer-logo" src="../assets/logo-upscaled-hochgeschoben.png" alt="Geisburg Records"></a>
     </div>
 </body>
 

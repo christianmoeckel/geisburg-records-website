@@ -134,11 +134,8 @@ nav a:hover {
     margin-bottom: 6px;
 }
 
-.listen-home {
-    color: black;
-    text-decoration: none;
-    font-weight: bold;
-    letter-spacing: 2px;
+.listen-footer-logo {
+    max-width: 90px;
 }
 
 .listen-buttons {
