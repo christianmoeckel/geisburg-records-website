@@ -51,28 +51,27 @@ def main():
     data = json.loads((ROOT / "data" / "releases.json").read_text())
     bc = fetch_bandcamp_map()
     cards, missing = [], []
+    cache_dirty = False
     for r in data["releases"]:
         links = []
-        bc_url = None
-        if r.get("bandcamp"):
+        bc_url = r.get("bandcamp_url")  # Cache — /music paginiert, einmal gefundene URLs bleiben
+        if r.get("bandcamp") and not bc_url:
             key = norm(r.get("bandcamp_title", r["title"]))
             bc_url = bc.get(key)
             if not bc_url:  # Slug-Kollisionen wie heaven-2: Slug beginnt mit Titel
                 slug = re.sub(r"[^a-z0-9]+", " ", key).strip().replace(" ", "-")
                 bc_url = next((u for k, u in bc.items() if k.startswith(key) or u.rsplit("/", 1)[-1].rstrip("-0123456789") == slug), None)
-            if not bc_url:
+            if bc_url:
+                r["bandcamp_url"] = bc_url
+                cache_dirty = True
+            else:
                 missing.append(r["title"])
-        # Christians Vorgabe (30.07. abends): GENAU EIN „listen"-Hyperlink pro Release.
-        # Ziel-Priorität: Bandcamp (published) > fester Smartlink (iMusician, Feld "links"/"smartlink").
-        # song.link/spotify/apple-Felder in der JSON werden bewusst NICHT gerendert (Odesli-Seiten
-        # zeigen Fremd-UI wie „Edit this page" und teils kein Spotify — untauglich für Fans).
-        if bc_url:
-            links.append((r.get("bandcamp_label", "listen"), bc_url))
-        elif r.get("smartlink"):
-            links.append(("listen", r["smartlink"]))
+        # Christians Endstand (30.07. nachts): „listen" führt IMMER auf unsere EIGENE
+        # Smartlink-Seite listen/<slug>.html (alle Dienste dort; tools/generate_listen_pages.py).
+        links.append(("listen", f"listen/{r['slug']}.html"))
         for l in r.get("links", []):
-            if links and l["label"] == "listen":
-                continue  # nur EIN listen-Link
+            if l["label"] == "listen":
+                continue  # eigene Landing ersetzt alte Direkt-Smartlinks
             links.append((l["label"], l["url"]))
         a_tags = "\n".join(
             f'                <a href="{html.escape(u)}">{html.escape(lab)}</a>' for lab, u in links
@@ -121,6 +120,8 @@ def main():
 </html>
 """
     (ROOT / "index.html").write_text(out)
+    if cache_dirty:
+        (ROOT / "data" / "releases.json").write_text(json.dumps(data, indent=2, ensure_ascii=False))
     print(f"index.html: {len(data['releases'])} Releases, {sum(1 for c in cards if 'href' in c)} mit Link")
     if missing:
         print("Noch ohne Bandcamp-Link (nicht published):", ", ".join(missing))

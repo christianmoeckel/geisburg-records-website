@@ -109,3 +109,42 @@ nav a:hover {
         max-width: 40%;
     }
 }
+
+.listen-page {
+    max-width: 420px;
+    margin: 0 auto;
+    padding: 10px 20px 30px;
+    text-align: center;
+}
+
+.listen-cover {
+    width: 100%;
+    max-width: 360px;
+    margin-bottom: 15px;
+}
+
+.listen-buttons {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.listen-btn {
+    display: block;
+    padding: 12px;
+    border: 1px solid black;
+    text-decoration: none;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    transition: background 0.2s, color 0.2s;
+}
+
+.listen-btn:hover {
+    background: black;
+    color: white;
+}
+
+.listen-note {
+    color: #666;
+}

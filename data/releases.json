@@ -7,7 +7,9 @@
       "cover": "assets/cover_minds_eye-min.jpg",
       "bandcamp": true,
       "songlink": "https://song.link/de/i/6774253809",
-      "applemusic": "https://geo.music.apple.com/de/album/_/6774253807?i=6774253809&mt=1&app=music&ls=1&at=1000lHKX&ct=api_http&itscg=30200&itsct=odsl_m"
+      "applemusic": "https://geo.music.apple.com/de/album/_/6774253807?i=6774253809&mt=1&app=music&ls=1&at=1000lHKX&ct=api_http&itscg=30200&itsct=odsl_m",
+      "slug": "mind-s-eye",
+      "bandcamp_url": "https://geisburgrecords.bandcamp.com/track/minds-eye"
     },
     {
       "title": "HIMMEL, BABY",
@@ -15,7 +17,11 @@
       "cover": "assets/cover_himmel_baby-min.jpg",
       "bandcamp": true,
       "songlink": "https://song.link/de/i/6773244277",
-      "applemusic": "https://geo.music.apple.com/de/album/_/6773244032?i=6773244277&mt=1&app=music&ls=1&at=1000lHKX&ct=api_http&itscg=30200&itsct=odsl_m"
+      "applemusic": "https://geo.music.apple.com/de/album/_/6773244032?i=6773244277&mt=1&app=music&ls=1&at=1000lHKX&ct=api_http&itscg=30200&itsct=odsl_m",
+      "slug": "himmel-baby",
+      "isrc": "CH6542686954",
+      "deezer": "https://www.deezer.com/track/4038151941",
+      "bandcamp_url": "https://geisburgrecords.bandcamp.com/track/himmel-baby"
     },
     {
       "title": "Die Welt ist gestreckt",
@@ -23,7 +29,9 @@
       "cover": "assets/cover_die_welt_ist_gestreckt-min.jpg",
       "bandcamp": true,
       "songlink": "https://song.link/de/i/6767582145",
-      "applemusic": "https://geo.music.apple.com/de/album/_/1862076330?i=1862076333&mt=1&app=music&ls=1&at=1000lHKX&ct=api_http&itscg=30200&itsct=odsl_m"
+      "applemusic": "https://geo.music.apple.com/de/album/_/1862076330?i=1862076333&mt=1&app=music&ls=1&at=1000lHKX&ct=api_http&itscg=30200&itsct=odsl_m",
+      "slug": "die-welt-ist-gestreckt",
+      "bandcamp_url": "https://geisburgrecords.bandcamp.com/album/die-welt-ist-gestreckt"
     },
     {
       "title": "in my dreamz",
@@ -31,7 +39,11 @@
       "cover": "assets/cover_in_my_dreamz-min.jpg",
       "bandcamp": true,
       "songlink": "https://song.link/de/i/6762600798",
-      "applemusic": "https://geo.music.apple.com/de/album/_/1894800752?i=6762600798&mt=1&app=music&ls=1&at=1000lHKX&ct=api_http&itscg=30200&itsct=odsl_m"
+      "applemusic": "https://geo.music.apple.com/de/album/_/1894800752?i=6762600798&mt=1&app=music&ls=1&at=1000lHKX&ct=api_http&itscg=30200&itsct=odsl_m",
+      "slug": "in-my-dreamz",
+      "isrc": "CH6542664586",
+      "deezer": "https://www.deezer.com/track/3968244681",
+      "bandcamp_url": "https://geisburgrecords.bandcamp.com/track/in-my-dreamz"
     },
     {
       "title": "I Still Slay",
@@ -39,7 +51,9 @@
       "cover": "assets/cover_i_still_slay-min.jpg",
       "bandcamp": true,
       "songlink": "https://song.link/de/i/6762801280",
-      "applemusic": "https://geo.music.apple.com/de/album/_/1895018278?i=6762801280&mt=1&app=music&ls=1&at=1000lHKX&ct=api_http&itscg=30200&itsct=odsl_m"
+      "applemusic": "https://geo.music.apple.com/de/album/_/1895018278?i=6762801280&mt=1&app=music&ls=1&at=1000lHKX&ct=api_http&itscg=30200&itsct=odsl_m",
+      "slug": "i-still-slay",
+      "bandcamp_url": "https://geisburgrecords.bandcamp.com/track/i-still-slay"
     },
     {
       "title": "Kino",
@@ -47,7 +61,11 @@
       "cover": "assets/cover_kino-min.jpg",
       "bandcamp": true,
       "songlink": "https://song.link/de/i/1885863721",
-      "applemusic": "https://geo.music.apple.com/de/album/_/1885863720?i=1885863721&mt=1&app=music&ls=1&at=1000lHKX&ct=api_http&itscg=30200&itsct=odsl_m"
+      "applemusic": "https://geo.music.apple.com/de/album/_/1885863720?i=1885863721&mt=1&app=music&ls=1&at=1000lHKX&ct=api_http&itscg=30200&itsct=odsl_m",
+      "slug": "kino",
+      "isrc": "CH6542645174",
+      "deezer": "https://www.deezer.com/track/3902958941",
+      "bandcamp_url": "https://geisburgrecords.bandcamp.com/track/kino"
     },
     {
       "title": "heaven",
@@ -55,7 +73,11 @@
       "cover": "assets/cover_heaven-min.jpg",
       "bandcamp": true,
       "songlink": "https://song.link/de/i/1880080414",
-      "applemusic": "https://geo.music.apple.com/de/album/_/1880080410?i=1880080414&mt=1&app=music&ls=1&at=1000lHKX&ct=api_http&itscg=30200&itsct=odsl_m"
+      "applemusic": "https://geo.music.apple.com/de/album/_/1880080410?i=1880080414&mt=1&app=music&ls=1&at=1000lHKX&ct=api_http&itscg=30200&itsct=odsl_m",
+      "slug": "heaven",
+      "isrc": "CH6542633821",
+      "deezer": "https://www.deezer.com/track/3866641351",
+      "bandcamp_url": "https://geisburgrecords.bandcamp.com/track/heaven-2"
     },
     {
       "title": "CHECK IN",
@@ -63,7 +85,9 @@
       "cover": "assets/cover_hotel_berlin-min.jpg",
       "bandcamp": true,
       "songlink": "https://album.link/de/i/1880164830",
-      "applemusic": "https://geo.music.apple.com/de/album/_/1880164830?mt=1&app=music&ls=1&at=1000lHKX&ct=api_http&itscg=30200&itsct=odsl_m"
+      "applemusic": "https://geo.music.apple.com/de/album/_/1880164830?mt=1&app=music&ls=1&at=1000lHKX&ct=api_http&itscg=30200&itsct=odsl_m",
+      "slug": "check-in",
+      "bandcamp_url": "https://geisburgrecords.bandcamp.com/album/check-in"
     },
     {
       "title": "Wunsch im All",
@@ -71,7 +95,11 @@
       "cover": "assets/cover_wunsch_im_all-min.jpg",
       "bandcamp": true,
       "songlink": "https://song.link/de/i/1876810809",
-      "applemusic": "https://geo.music.apple.com/de/album/_/1876810806?i=1876810809&mt=1&app=music&ls=1&at=1000lHKX&ct=api_http&itscg=30200&itsct=odsl_m"
+      "applemusic": "https://geo.music.apple.com/de/album/_/1876810806?i=1876810809&mt=1&app=music&ls=1&at=1000lHKX&ct=api_http&itscg=30200&itsct=odsl_m",
+      "slug": "wunsch-im-all",
+      "isrc": "CH6542628526",
+      "deezer": "https://www.deezer.com/track/3838217281",
+      "bandcamp_url": "https://geisburgrecords.bandcamp.com/track/wunsch-im-all-2"
     },
     {
       "title": "Kassandra",
@@ -79,7 +107,11 @@
       "cover": "assets/cover_kassandra-min.jpg",
       "bandcamp": true,
       "songlink": "https://song.link/de/i/1862076333",
-      "applemusic": "https://geo.music.apple.com/de/album/_/1862076330?i=1862076333&mt=1&app=music&ls=1&at=1000lHKX&ct=api_http&itscg=30200&itsct=odsl_m"
+      "applemusic": "https://geo.music.apple.com/de/album/_/1862076330?i=1862076333&mt=1&app=music&ls=1&at=1000lHKX&ct=api_http&itscg=30200&itsct=odsl_m",
+      "slug": "kassandra",
+      "isrc": "CH6542608996",
+      "deezer": "https://www.deezer.com/track/3720090602",
+      "bandcamp_url": "https://geisburgrecords.bandcamp.com/track/kassandra"
     },
     {
       "title": "Slow Pace",
@@ -87,7 +119,11 @@
       "cover": "assets/cover_slow_pace-min.jpg",
       "bandcamp": true,
       "songlink": "https://song.link/de/i/1850716129",
-      "applemusic": "https://geo.music.apple.com/de/album/_/1850716128?i=1850716129&mt=1&app=music&ls=1&at=1000lHKX&ct=api_http&itscg=30200&itsct=odsl_m"
+      "applemusic": "https://geo.music.apple.com/de/album/_/1850716128?i=1850716129&mt=1&app=music&ls=1&at=1000lHKX&ct=api_http&itscg=30200&itsct=odsl_m",
+      "slug": "slow-pace",
+      "isrc": "CH6542591584",
+      "deezer": "https://www.deezer.com/track/3637356242",
+      "bandcamp_url": "https://geisburgrecords.bandcamp.com/track/slow-pace"
     },
     {
       "title": "Baum",
@@ -95,7 +131,10 @@
       "cover": "assets/cover_baum-min.jpg",
       "bandcamp": true,
       "songlink": "https://song.link/de/i/1845445807",
-      "applemusic": "https://geo.music.apple.com/de/album/_/1845445804?i=1845445807&mt=1&app=music&ls=1&at=1000lHKX&ct=api_http&itscg=30200&itsct=odsl_m"
+      "applemusic": "https://geo.music.apple.com/de/album/_/1845445804?i=1845445807&mt=1&app=music&ls=1&at=1000lHKX&ct=api_http&itscg=30200&itsct=odsl_m",
+      "slug": "baum",
+      "isrc": "CH6542581339",
+      "deezer": "https://www.deezer.com/track/3596632012"
     },
     {
       "title": "Lügen an die Wand",
@@ -103,7 +142,11 @@
       "cover": "assets/cover_hb_luegen-min.jpg",
       "bandcamp": true,
       "songlink": "https://song.link/de/i/1880136630",
-      "applemusic": "https://geo.music.apple.com/de/album/_/1880136625?i=1880136630&mt=1&app=music&ls=1&at=1000lHKX&ct=api_http&itscg=30200&itsct=odsl_m"
+      "applemusic": "https://geo.music.apple.com/de/album/_/1880136625?i=1880136630&mt=1&app=music&ls=1&at=1000lHKX&ct=api_http&itscg=30200&itsct=odsl_m",
+      "slug": "lugen-an-die-wand",
+      "isrc": "DEXO12504584",
+      "deezer": "https://www.deezer.com/track/3865308361",
+      "bandcamp_url": "https://geisburgrecords.bandcamp.com/track/l-gen-an-die-wand-2"
     },
     {
       "title": "Palo Santo",
@@ -111,7 +154,11 @@
       "cover": "assets/cover_hb_palo_santo-min.jpg",
       "bandcamp": true,
       "songlink": "https://song.link/de/i/1880066959",
-      "applemusic": "https://geo.music.apple.com/de/album/_/1880066958?i=1880066959&mt=1&app=music&ls=1&at=1000lHKX&ct=api_http&itscg=30200&itsct=odsl_m"
+      "applemusic": "https://geo.music.apple.com/de/album/_/1880066958?i=1880066959&mt=1&app=music&ls=1&at=1000lHKX&ct=api_http&itscg=30200&itsct=odsl_m",
+      "slug": "palo-santo",
+      "isrc": "DEXN92531995",
+      "deezer": "https://www.deezer.com/track/3865308341",
+      "bandcamp_url": "https://geisburgrecords.bandcamp.com/track/palo-santo-2"
     },
     {
       "title": "U.N.I.",
@@ -119,7 +166,11 @@
       "cover": "assets/cover_hb_uni-min.jpg",
       "bandcamp": true,
       "songlink": "https://song.link/de/i/1880023226",
-      "applemusic": "https://geo.music.apple.com/de/album/_/1880023222?i=1880023226&mt=1&app=music&ls=1&at=1000lHKX&ct=api_http&itscg=30200&itsct=odsl_m"
+      "applemusic": "https://geo.music.apple.com/de/album/_/1880023222?i=1880023226&mt=1&app=music&ls=1&at=1000lHKX&ct=api_http&itscg=30200&itsct=odsl_m",
+      "slug": "u-n-i",
+      "isrc": "DEXN92561062",
+      "deezer": "https://www.deezer.com/track/3865308351",
+      "bandcamp_url": "https://geisburgrecords.bandcamp.com/track/u-n-i-2"
     },
     {
       "title": "BNICE2URFRIENDS",
@@ -127,7 +178,8 @@
       "cover": "assets/cover_bnice2urfriends-min.jpg",
       "bandcamp": true,
       "songlink": "https://song.link/de/i/1818057798",
-      "applemusic": "https://geo.music.apple.com/de/album/_/1818057672?i=1818057798&mt=1&app=music&ls=1&at=1000lHKX&ct=api_http&itscg=30200&itsct=odsl_m"
+      "applemusic": "https://geo.music.apple.com/de/album/_/1818057672?i=1818057798&mt=1&app=music&ls=1&at=1000lHKX&ct=api_http&itscg=30200&itsct=odsl_m",
+      "slug": "bnice2urfriends"
     },
     {
       "title": "hitch a ride",
@@ -135,7 +187,11 @@
       "cover": "assets/cover_hb_hitch_a_ride-min.jpg",
       "bandcamp": true,
       "songlink": "https://song.link/de/i/1880080185",
-      "applemusic": "https://geo.music.apple.com/de/album/_/1880080184?i=1880080185&mt=1&app=music&ls=1&at=1000lHKX&ct=api_http&itscg=30200&itsct=odsl_m"
+      "applemusic": "https://geo.music.apple.com/de/album/_/1880080184?i=1880080185&mt=1&app=music&ls=1&at=1000lHKX&ct=api_http&itscg=30200&itsct=odsl_m",
+      "slug": "hitch-a-ride",
+      "isrc": "DEXN92510724",
+      "deezer": "https://www.deezer.com/track/3866640371",
+      "bandcamp_url": "https://geisburgrecords.bandcamp.com/track/hitch-a-ride-2"
     },
     {
       "title": "April 29th",
@@ -143,7 +199,11 @@
       "cover": "assets/cover_hb_april_29th-min.jpg",
       "bandcamp": true,
       "songlink": "https://song.link/de/i/1880024072",
-      "applemusic": "https://geo.music.apple.com/de/album/_/1880024071?i=1880024072&mt=1&app=music&ls=1&at=1000lHKX&ct=api_http&itscg=30200&itsct=odsl_m"
+      "applemusic": "https://geo.music.apple.com/de/album/_/1880024071?i=1880024072&mt=1&app=music&ls=1&at=1000lHKX&ct=api_http&itscg=30200&itsct=odsl_m",
+      "slug": "april-29th",
+      "isrc": "DEXN82589419",
+      "deezer": "https://www.deezer.com/track/3865308331",
+      "bandcamp_url": "https://geisburgrecords.bandcamp.com/track/april-29th-2"
     },
     {
       "title": "Panama Outro",
@@ -151,28 +211,45 @@
       "cover": "assets/cover_hb_panama_outro-min.jpg",
       "bandcamp": true,
       "songlink": "https://song.link/de/i/1880067072",
-      "applemusic": "https://geo.music.apple.com/de/album/_/1880067067?i=1880067072&mt=1&app=music&ls=1&at=1000lHKX&ct=api_http&itscg=30200&itsct=odsl_m"
+      "applemusic": "https://geo.music.apple.com/de/album/_/1880067067?i=1880067072&mt=1&app=music&ls=1&at=1000lHKX&ct=api_http&itscg=30200&itsct=odsl_m",
+      "slug": "panama-outro",
+      "isrc": "DEXN82543782",
+      "deezer": "https://www.deezer.com/track/3865308321",
+      "bandcamp_url": "https://geisburgrecords.bandcamp.com/track/panama-outro-2"
     },
     {
       "title": "Let It Die",
       "artist": "Mona Rowey, bland & pale",
       "cover": "assets/cover_let_it_die-min.jpg",
       "bandcamp": true,
-      "songlink": "https://song.link/i/1823677063"
+      "songlink": "https://song.link/i/1823677063",
+      "slug": "let-it-die",
+      "applemusic": "https://music.apple.com/de/song/1823677063",
+      "isrc": "CH6542548582",
+      "deezer": "https://www.deezer.com/track/3437809011",
+      "bandcamp_url": "https://geisburgrecords.bandcamp.com/track/let-it-die-feat-bland-pale"
     },
     {
       "title": "Kieler Sprotte (Instrumental)",
       "artist": "Shlomes",
       "cover": "assets/cover_kieler_sprotte-min.jpg",
       "bandcamp": true,
-      "songlink": "https://song.link/i/1818057806"
+      "songlink": "https://song.link/i/1818057806",
+      "slug": "kieler-sprotte-instrumental",
+      "applemusic": "https://music.apple.com/de/song/1818057806",
+      "isrc": "CH6542539091",
+      "deezer": "https://www.deezer.com/track/3393371531"
     },
     {
       "title": "Sparkle Hop",
       "artist": "Shlomes",
       "cover": "assets/cover_sparkle_hop-min.jpg",
       "bandcamp": true,
-      "songlink": "https://song.link/i/1817603021"
+      "songlink": "https://song.link/i/1817603021",
+      "slug": "sparkle-hop",
+      "applemusic": "https://music.apple.com/de/song/1817603021",
+      "isrc": "CH6542539089",
+      "deezer": "https://www.deezer.com/track/3388698421"
     },
     {
       "title": "End of the World",
@@ -180,7 +257,11 @@
       "cover": "assets/cover_hb_end_of_the_world-min.jpg",
       "bandcamp": true,
       "songlink": "https://song.link/de/i/1880117901",
-      "applemusic": "https://geo.music.apple.com/de/album/_/1880117895?i=1880117901&mt=1&app=music&ls=1&at=1000lHKX&ct=api_http&itscg=30200&itsct=odsl_m"
+      "applemusic": "https://geo.music.apple.com/de/album/_/1880117895?i=1880117901&mt=1&app=music&ls=1&at=1000lHKX&ct=api_http&itscg=30200&itsct=odsl_m",
+      "slug": "end-of-the-world",
+      "isrc": "DEVU52587201",
+      "deezer": "https://www.deezer.com/track/3865308311",
+      "bandcamp_url": "https://geisburgrecords.bandcamp.com/track/end-of-the-world-2"
     },
     {
       "title": "sold on the street",
@@ -193,7 +274,10 @@
         }
       ],
       "songlink": "https://song.link/de/i/1795430324",
-      "applemusic": "https://geo.music.apple.com/de/album/_/1795430320?i=1795430324&mt=1&app=music&ls=1&at=1000lHKX&ct=api_http&itscg=30200&itsct=odsl_m"
+      "applemusic": "https://geo.music.apple.com/de/album/_/1795430320?i=1795430324&mt=1&app=music&ls=1&at=1000lHKX&ct=api_http&itscg=30200&itsct=odsl_m",
+      "slug": "sold-on-the-street",
+      "isrc": "CH6542509187",
+      "deezer": "https://www.deezer.com/track/3226812971"
     },
     {
       "title": "Anything That You'd Like",
@@ -206,7 +290,8 @@
         }
       ],
       "songlink": "https://song.link/de/i/1786322999",
-      "applemusic": "https://geo.music.apple.com/de/album/_/1786322989?i=1786322999&mt=1&app=music&ls=1&at=1000lHKX&ct=api_http&itscg=30200&itsct=odsl_m"
+      "applemusic": "https://geo.music.apple.com/de/album/_/1786322989?i=1786322999&mt=1&app=music&ls=1&at=1000lHKX&ct=api_http&itscg=30200&itsct=odsl_m",
+      "slug": "anything-that-you-d-like"
     },
     {
       "title": "Nothing Is Rounder Than the Sun",
@@ -214,7 +299,11 @@
       "cover": "assets/cover_Nothin_is_Rounder_Than_The_Sun_final_1080.jpg",
       "bandcamp": true,
       "songlink": "https://song.link/de/i/1778501286",
-      "applemusic": "https://geo.music.apple.com/de/album/_/1778501285?i=1778501286&mt=1&app=music&ls=1&at=1000lHKX&ct=api_http&itscg=30200&itsct=odsl_m"
+      "applemusic": "https://geo.music.apple.com/de/album/_/1778501285?i=1778501286&mt=1&app=music&ls=1&at=1000lHKX&ct=api_http&itscg=30200&itsct=odsl_m",
+      "slug": "nothing-is-rounder-than-the-sun",
+      "isrc": "CH6542474476",
+      "deezer": "https://www.deezer.com/track/3079828571",
+      "bandcamp_url": "https://geisburgrecords.bandcamp.com/track/nothing-is-rounder-than-the-sun"
     },
     {
       "title": "untouched",
@@ -222,7 +311,11 @@
       "cover": "assets/COVER_untouched_teuer-min.jpg",
       "bandcamp": true,
       "songlink": "https://song.link/de/i/1777054585",
-      "applemusic": "https://geo.music.apple.com/de/album/_/1777054581?i=1777054585&mt=1&app=music&ls=1&at=1000lHKX&ct=api_http&itscg=30200&itsct=odsl_m"
+      "applemusic": "https://geo.music.apple.com/de/album/_/1777054581?i=1777054585&mt=1&app=music&ls=1&at=1000lHKX&ct=api_http&itscg=30200&itsct=odsl_m",
+      "slug": "untouched",
+      "isrc": "CH6542465116",
+      "deezer": "https://www.deezer.com/track/3089990861",
+      "bandcamp_url": "https://geisburgrecords.bandcamp.com/track/untouched"
     },
     {
       "title": "FLIGHTMODE FIRSTCLASS",
@@ -231,7 +324,9 @@
       "bandcamp": true,
       "bandcamp_label": "cassette only",
       "bandcamp_title": "flightmode first class",
-      "songlink": null
+      "songlink": null,
+      "slug": "flightmode-firstclass",
+      "bandcamp_url": "https://geisburgrecords.bandcamp.com/album/flightmode-first-class"
     },
     {
       "title": "levitate",
@@ -239,7 +334,11 @@
       "cover": "assets/COVER_levitate_teuer_small.jpg",
       "bandcamp": true,
       "songlink": "https://song.link/de/i/1770973014",
-      "applemusic": "https://geo.music.apple.com/de/album/_/1770973012?i=1770973014&mt=1&app=music&ls=1&at=1000lHKX&ct=api_http&itscg=30200&itsct=odsl_m"
+      "applemusic": "https://geo.music.apple.com/de/album/_/1770973012?i=1770973014&mt=1&app=music&ls=1&at=1000lHKX&ct=api_http&itscg=30200&itsct=odsl_m",
+      "slug": "levitate",
+      "isrc": "CH6542457591",
+      "deezer": "https://www.deezer.com/track/3017553411",
+      "bandcamp_url": "https://geisburgrecords.bandcamp.com/track/levitate"
     },
     {
       "title": "can't stop",
@@ -247,7 +346,11 @@
       "cover": "assets/COVER_cant_stop_teuer.jpg",
       "bandcamp": true,
       "songlink": "https://song.link/de/i/1760756485",
-      "applemusic": "https://geo.music.apple.com/de/album/_/1760756479?i=1760756485&mt=1&app=music&ls=1&at=1000lHKX&ct=api_http&itscg=30200&itsct=odsl_m"
+      "applemusic": "https://geo.music.apple.com/de/album/_/1760756479?i=1760756485&mt=1&app=music&ls=1&at=1000lHKX&ct=api_http&itscg=30200&itsct=odsl_m",
+      "slug": "can-t-stop",
+      "isrc": "CH6542443019",
+      "deezer": "https://www.deezer.com/track/2928747271",
+      "bandcamp_url": "https://geisburgrecords.bandcamp.com/track/cant-stop"
     },
     {
       "title": "Memories of Summer",
@@ -255,7 +358,11 @@
       "cover": "assets/memories_of_summer_cover.jpg",
       "bandcamp": true,
       "songlink": "https://song.link/de/i/1755581622",
-      "applemusic": "https://geo.music.apple.com/de/album/_/1755581615?i=1755581622&mt=1&app=music&ls=1&at=1000lHKX&ct=api_http&itscg=30200&itsct=odsl_m"
+      "applemusic": "https://geo.music.apple.com/de/album/_/1755581615?i=1755581622&mt=1&app=music&ls=1&at=1000lHKX&ct=api_http&itscg=30200&itsct=odsl_m",
+      "slug": "memories-of-summer",
+      "isrc": "QZMEN2428449",
+      "deezer": "https://www.deezer.com/track/2876193462",
+      "bandcamp_url": "https://geisburgrecords.bandcamp.com/album/memories-of-summer"
     },
     {
       "title": "head start",
@@ -263,7 +370,11 @@
       "cover": "assets/headstart_cover.jpg",
       "bandcamp": true,
       "songlink": "https://song.link/de/i/1786564578",
-      "applemusic": "https://geo.music.apple.com/de/album/_/1786564576?i=1786564578&mt=1&app=music&ls=1&at=1000lHKX&ct=api_http&itscg=30200&itsct=odsl_m"
+      "applemusic": "https://geo.music.apple.com/de/album/_/1786564576?i=1786564578&mt=1&app=music&ls=1&at=1000lHKX&ct=api_http&itscg=30200&itsct=odsl_m",
+      "slug": "head-start",
+      "isrc": "QZK6L2490799",
+      "deezer": "https://www.deezer.com/track/3151129461",
+      "bandcamp_url": "https://geisburgrecords.bandcamp.com/track/head-start"
     },
     {
       "title": "win this time",
@@ -271,7 +382,11 @@
       "cover": "assets/cover_win_this_time_ep-min.jpg",
       "bandcamp": true,
       "songlink": "https://song.link/de/i/1783821747",
-      "applemusic": "https://geo.music.apple.com/de/album/_/1783821741?i=1783821747&mt=1&app=music&ls=1&at=1000lHKX&ct=api_http&itscg=30200&itsct=odsl_m"
+      "applemusic": "https://geo.music.apple.com/de/album/_/1783821741?i=1783821747&mt=1&app=music&ls=1&at=1000lHKX&ct=api_http&itscg=30200&itsct=odsl_m",
+      "slug": "win-this-time",
+      "isrc": "QZHN62454646",
+      "deezer": "https://www.deezer.com/track/3130610541",
+      "bandcamp_url": "https://geisburgrecords.bandcamp.com/track/win-this-time-2"
     },
     {
       "title": "Wintergarten",
@@ -279,7 +394,11 @@
       "cover": "assets/wintergarten_cover.jpg",
       "bandcamp": true,
       "songlink": "https://song.link/de/i/1786564686",
-      "applemusic": "https://geo.music.apple.com/de/album/_/1786564683?i=1786564686&mt=1&app=music&ls=1&at=1000lHKX&ct=api_http&itscg=30200&itsct=odsl_m"
+      "applemusic": "https://geo.music.apple.com/de/album/_/1786564683?i=1786564686&mt=1&app=music&ls=1&at=1000lHKX&ct=api_http&itscg=30200&itsct=odsl_m",
+      "slug": "wintergarten",
+      "isrc": "QZMEQ2416138",
+      "deezer": "https://www.deezer.com/track/3150788881",
+      "bandcamp_url": "https://geisburgrecords.bandcamp.com/track/wintergarten-feat-shlomes"
     },
     {
       "title": "23 Grad",
@@ -287,7 +406,11 @@
       "cover": "assets/23grad_cover.jpg",
       "bandcamp": true,
       "songlink": "https://song.link/de/i/1786610387",
-      "applemusic": "https://geo.music.apple.com/de/album/_/1786610381?i=1786610387&mt=1&app=music&ls=1&at=1000lHKX&ct=api_http&itscg=30200&itsct=odsl_m"
+      "applemusic": "https://geo.music.apple.com/de/album/_/1786610381?i=1786610387&mt=1&app=music&ls=1&at=1000lHKX&ct=api_http&itscg=30200&itsct=odsl_m",
+      "slug": "23-grad",
+      "isrc": "QZK6K2443550",
+      "deezer": "https://www.deezer.com/track/2876193472",
+      "bandcamp_url": "https://geisburgrecords.bandcamp.com/track/23-grad-feat-marieke"
     },
     {
       "title": "Lautlos",
@@ -295,7 +418,11 @@
       "cover": "assets/lautlos_cover.jpg",
       "bandcamp": true,
       "songlink": "https://song.link/de/i/1755581905",
-      "applemusic": "https://geo.music.apple.com/de/album/_/1755581615?i=1755581905&mt=1&app=music&ls=1&at=1000lHKX&ct=api_http&itscg=30200&itsct=odsl_m"
+      "applemusic": "https://geo.music.apple.com/de/album/_/1755581615?i=1755581905&mt=1&app=music&ls=1&at=1000lHKX&ct=api_http&itscg=30200&itsct=odsl_m",
+      "slug": "lautlos",
+      "isrc": "QZHN92461112",
+      "deezer": "https://www.deezer.com/track/2876193492",
+      "bandcamp_url": "https://geisburgrecords.bandcamp.com/track/lautlos-feat-dj-krille"
     },
     {
       "title": "call me",
@@ -303,7 +430,11 @@
       "cover": "assets/call_me_cover.jpg",
       "bandcamp": true,
       "songlink": "https://song.link/de/i/1783821755",
-      "applemusic": "https://geo.music.apple.com/de/album/_/1783821741?i=1783821755&mt=1&app=music&ls=1&at=1000lHKX&ct=api_http&itscg=30200&itsct=odsl_m"
+      "applemusic": "https://geo.music.apple.com/de/album/_/1783821741?i=1783821755&mt=1&app=music&ls=1&at=1000lHKX&ct=api_http&itscg=30200&itsct=odsl_m",
+      "slug": "call-me",
+      "isrc": "QZFZ62490655",
+      "deezer": "https://www.deezer.com/track/3130610561",
+      "bandcamp_url": "https://geisburgrecords.bandcamp.com/track/call-me"
     },
     {
       "title": "11 in the morning",
@@ -311,7 +442,11 @@
       "cover": "assets/11_in_the_morning_bland_pale_cover.jpg",
       "bandcamp": true,
       "songlink": "https://song.link/de/i/1786563242",
-      "applemusic": "https://geo.music.apple.com/de/album/_/1786563236?i=1786563242&mt=1&app=music&ls=1&at=1000lHKX&ct=api_http&itscg=30200&itsct=odsl_m"
+      "applemusic": "https://geo.music.apple.com/de/album/_/1786563236?i=1786563242&mt=1&app=music&ls=1&at=1000lHKX&ct=api_http&itscg=30200&itsct=odsl_m",
+      "slug": "11-in-the-morning",
+      "isrc": "QZTBB2301861",
+      "deezer": "https://www.deezer.com/track/3130610551",
+      "bandcamp_url": "https://geisburgrecords.bandcamp.com/track/11-in-the-morning"
     },
     {
       "title": "tv jingle",
@@ -319,7 +454,11 @@
       "cover": "assets/cover_tv_jingle-min.jpg",
       "bandcamp": true,
       "songlink": "https://song.link/de/i/1786564725",
-      "applemusic": "https://geo.music.apple.com/de/album/_/1786564724?i=1786564725&mt=1&app=music&ls=1&at=1000lHKX&ct=api_http&itscg=30200&itsct=odsl_m"
+      "applemusic": "https://geo.music.apple.com/de/album/_/1786564724?i=1786564725&mt=1&app=music&ls=1&at=1000lHKX&ct=api_http&itscg=30200&itsct=odsl_m",
+      "slug": "tv-jingle",
+      "isrc": "QZTAX2267875",
+      "deezer": "https://www.deezer.com/track/3150775641",
+      "bandcamp_url": "https://geisburgrecords.bandcamp.com/track/tv-jingle"
     },
     {
       "title": "Cannonball",
@@ -327,7 +466,10 @@
       "cover": "assets/cannonball_cover.jpg",
       "bandcamp": true,
       "songlink": "https://song.link/de/i/1728933005",
-      "applemusic": "https://geo.music.apple.com/de/album/_/1728933004?i=1728933005&mt=1&app=music&ls=1&at=1000lHKX&ct=api_http&itscg=30200&itsct=odsl_m"
+      "applemusic": "https://geo.music.apple.com/de/album/_/1728933004?i=1728933005&mt=1&app=music&ls=1&at=1000lHKX&ct=api_http&itscg=30200&itsct=odsl_m",
+      "slug": "cannonball",
+      "isrc": "QZFZ72490756",
+      "deezer": "https://www.deezer.com/track/2639809962"
     },
     {
       "title": "Free Shipping",
@@ -340,7 +482,11 @@
           "url": "https://www.youtube.com/watch?v=EzU3HzsbtFE"
         }
       ],
-      "songlink": null
+      "songlink": null,
+      "slug": "free-shipping",
+      "isrc": "QZTBB2396414",
+      "deezer": "https://www.deezer.com/track/3150788891",
+      "bandcamp_url": "https://geisburgrecords.bandcamp.com/track/free-shipping"
     },
     {
       "title": "Ballon",
@@ -348,7 +494,11 @@
       "cover": "assets/ballon_cover.jpg",
       "bandcamp": true,
       "songlink": "https://song.link/de/i/1786563267",
-      "applemusic": "https://geo.music.apple.com/de/album/_/1786563260?i=1786563267&mt=1&app=music&ls=1&at=1000lHKX&ct=api_http&itscg=30200&itsct=odsl_m"
+      "applemusic": "https://geo.music.apple.com/de/album/_/1786563260?i=1786563267&mt=1&app=music&ls=1&at=1000lHKX&ct=api_http&itscg=30200&itsct=odsl_m",
+      "slug": "ballon",
+      "isrc": "QZTB42390959",
+      "deezer": "https://www.deezer.com/track/3150775731",
+      "bandcamp_url": "https://geisburgrecords.bandcamp.com/track/ballon"
     },
     {
       "title": "i can't stand the light",
@@ -356,7 +506,11 @@
       "cover": "assets/cover_cant_stand_the_light-min.jpg",
       "bandcamp": true,
       "songlink": "https://song.link/de/i/1783821763",
-      "applemusic": "https://geo.music.apple.com/de/album/_/1783821741?i=1783821763&mt=1&app=music&ls=1&at=1000lHKX&ct=api_http&itscg=30200&itsct=odsl_m"
+      "applemusic": "https://geo.music.apple.com/de/album/_/1783821741?i=1783821763&mt=1&app=music&ls=1&at=1000lHKX&ct=api_http&itscg=30200&itsct=odsl_m",
+      "slug": "i-can-t-stand-the-light",
+      "isrc": "QZDA82264712",
+      "deezer": "https://www.deezer.com/track/3130610571",
+      "bandcamp_url": "https://geisburgrecords.bandcamp.com/track/i-cant-stand-the-light"
     },
     {
       "title": "Fire EP",
@@ -364,7 +518,10 @@
       "cover": "assets/fire_ep_marshall_anderson_cover.jpg",
       "bandcamp": true,
       "bandcamp_title": "FIRE",
-      "songlink": "https://song.link/i/1504181577"
+      "songlink": "https://song.link/i/1504181577",
+      "slug": "fire-ep",
+      "applemusic": "https://music.apple.com/de/song/1504181577",
+      "bandcamp_url": "https://geisburgrecords.bandcamp.com/album/fire"
     }
   ]
 }
