@@ -64,7 +64,7 @@ def main():
         if r.get("songlink") and not (bc_url and r.get("spotify")):
             links.append(("more", r["songlink"]))
         for l in r.get("links", []):
-            if sl and l["label"] == "listen":
+            if r.get("songlink") and l["label"] == "listen":
                 continue  # songlink ersetzt alte Einzel-Smartlinks
             links.append((l["label"], l["url"]))
         a_tags = "\n".join(
