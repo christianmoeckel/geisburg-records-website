@@ -1,0 +1,216 @@
+{
+  "_doku": "Quelle des Release-Grids auf index.html. Array-Reihenfolge = Anzeige-Reihenfolge (neueste oben). 'bandcamp': true => tools/generate_index.py sucht den Titel live auf geisburgrecords.bandcamp.com/music und setzt den Link, sobald published (vorher erscheint der Eintrag ohne Link). 'bandcamp_title' überschreibt den Match-Titel. 'links' = feste Zusatz-/Fallback-Links.",
+  "releases": [
+    {
+      "title": "mind's eye",
+      "artist": "bland & pale",
+      "cover": "assets/cover_minds_eye-min.jpg",
+      "bandcamp": true
+    },
+    {
+      "title": "HIMMEL, BABY",
+      "artist": "syn",
+      "cover": "assets/cover_himmel_baby-min.jpg",
+      "bandcamp": true
+    },
+    {
+      "title": "Die Welt ist gestreckt",
+      "artist": "Kresse 3",
+      "cover": "assets/cover_die_welt_ist_gestreckt-min.jpg",
+      "bandcamp": true
+    },
+    {
+      "title": "in my dreamz",
+      "artist": "bland & pale",
+      "cover": "assets/cover_in_my_dreamz-min.jpg",
+      "bandcamp": true
+    },
+    {
+      "title": "I Still Slay",
+      "artist": "Loulia & Tim Schoene",
+      "cover": "assets/cover_i_still_slay-min.jpg",
+      "bandcamp": true
+    },
+    {
+      "title": "Kino",
+      "artist": "Kresse 3",
+      "cover": "assets/cover_kino-min.jpg",
+      "bandcamp": true
+    },
+    {
+      "title": "heaven",
+      "artist": "bland & pale",
+      "cover": "assets/cover_heaven-min.jpg",
+      "bandcamp": true
+    },
+    {
+      "title": "HOTEL BERLIN",
+      "artist": "HOTEL BERLIN",
+      "cover": "assets/cover_hotel_berlin-min.jpg",
+      "bandcamp": true
+    },
+    {
+      "title": "Wunsch im All",
+      "artist": "Kresse 3",
+      "cover": "assets/cover_wunsch_im_all-min.jpg",
+      "bandcamp": true
+    },
+    {
+      "title": "Kassandra",
+      "artist": "Kresse 3",
+      "cover": "assets/cover_kassandra-min.jpg",
+      "bandcamp": true
+    },
+    {
+      "title": "Slow Pace",
+      "artist": "Loulia",
+      "cover": "assets/cover_slow_pace-min.jpg",
+      "bandcamp": true
+    },
+    {
+      "title": "sold on the street",
+      "artist": "teuer",
+      "cover": "assets/cover_sold_on_the_street-min.jpg",
+      "links": [
+        {
+          "label": "listen",
+          "url": "https://music.imusician.pro/a/PAdGxVKs/"
+        }
+      ]
+    },
+    {
+      "title": "Anything That You'd Like",
+      "artist": "Mona Rowey",
+      "cover": "assets/Anything_Youd_Like_Cover_1710_Original.jpg",
+      "links": [
+        {
+          "label": "listen",
+          "url": "https://music.imusician.pro/a/uWLRNOoz/"
+        }
+      ]
+    },
+    {
+      "title": "Nothing Is Rounder Than the Sun",
+      "artist": "Mona Rowey",
+      "cover": "assets/cover_Nothin_is_Rounder_Than_The_Sun_final_1080.jpg",
+      "bandcamp": true
+    },
+    {
+      "title": "untouched",
+      "artist": "teuer",
+      "cover": "assets/COVER_untouched_teuer-min.jpg",
+      "bandcamp": true
+    },
+    {
+      "title": "FLIGHTMODE FIRSTCLASS",
+      "artist": "Various Artists",
+      "cover": "assets/Cover_Flightmode_Firstclass.jpg",
+      "bandcamp": true,
+      "bandcamp_label": "cassette only",
+      "bandcamp_title": "flightmode first class"
+    },
+    {
+      "title": "levitate",
+      "artist": "teuer",
+      "cover": "assets/COVER_levitate_teuer_small.jpg",
+      "bandcamp": true
+    },
+    {
+      "title": "can't stop",
+      "artist": "teuer",
+      "cover": "assets/COVER_cant_stop_teuer.jpg",
+      "bandcamp": true
+    },
+    {
+      "title": "Memories of Summer",
+      "artist": "Shlomes",
+      "cover": "assets/memories_of_summer_cover.jpg",
+      "bandcamp": true
+    },
+    {
+      "title": "head start",
+      "artist": "bland & pale",
+      "cover": "assets/headstart_cover.jpg",
+      "bandcamp": true
+    },
+    {
+      "title": "win this time",
+      "artist": "bland & pale",
+      "cover": "assets/cover_win_this_time_ep-min.jpg",
+      "bandcamp": true
+    },
+    {
+      "title": "Wintergarten",
+      "artist": "DJ Krille & Shlomes",
+      "cover": "assets/wintergarten_cover.jpg",
+      "bandcamp": true
+    },
+    {
+      "title": "23 Grad",
+      "artist": "Shlomes",
+      "cover": "assets/23grad_cover.jpg",
+      "bandcamp": true
+    },
+    {
+      "title": "Lautlos",
+      "artist": "Shlomes feat. DJ Krille",
+      "cover": "assets/lautlos_cover.jpg",
+      "bandcamp": true
+    },
+    {
+      "title": "call me",
+      "artist": "bland & pale",
+      "cover": "assets/call_me_cover.jpg",
+      "bandcamp": true
+    },
+    {
+      "title": "11 in the morning",
+      "artist": "bland & pale",
+      "cover": "assets/11_in_the_morning_bland_pale_cover.jpg",
+      "bandcamp": true
+    },
+    {
+      "title": "tv jingle",
+      "artist": "bland & pale",
+      "cover": "assets/cover_tv_jingle-min.jpg",
+      "bandcamp": true
+    },
+    {
+      "title": "Cannonball",
+      "artist": "KEI CAR",
+      "cover": "assets/cannonball_cover.jpg",
+      "bandcamp": true
+    },
+    {
+      "title": "Free Shipping",
+      "artist": "G-Rex Delight",
+      "cover": "assets/free_shipping_cover.jpg",
+      "bandcamp": true,
+      "links": [
+        {
+          "label": "watch music video",
+          "url": "https://www.youtube.com/watch?v=EzU3HzsbtFE"
+        }
+      ]
+    },
+    {
+      "title": "Ballon",
+      "artist": "DJ Krille & Shlomes",
+      "cover": "assets/ballon_cover.jpg",
+      "bandcamp": true
+    },
+    {
+      "title": "i can't stand the light",
+      "artist": "bland & pale",
+      "cover": "assets/cover_cant_stand_the_light-min.jpg",
+      "bandcamp": true
+    },
+    {
+      "title": "Fire EP",
+      "artist": "Marshall Anderson",
+      "cover": "assets/fire_ep_marshall_anderson_cover.jpg",
+      "bandcamp": true,
+      "bandcamp_title": "FIRE"
+    }
+  ]
+}
