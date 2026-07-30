@@ -37,11 +37,20 @@ def main():
         kind = "album" if m.group(1) == "album" else "song"
         itunes_url = (f"https://music.apple.com/de/{'album' if kind == 'album' else 'song'}/{m.group(2)}"
                       if kind == "album" else f"https://music.apple.com/de/song/{m.group(2)}")
-        try:
-            data = fetch(itunes_url)
-        except Exception as e:
-            print(f"WARN {r['title']}: {e}")
-            time.sleep(8)
+        data = None
+        for attempt in range(3):
+            try:
+                data = fetch(itunes_url)
+                break
+            except Exception as e:
+                if "429" in str(e):
+                    print(f"  429 bei {r['title']} — warte 180s (Versuch {attempt + 1}/3)")
+                    time.sleep(180)
+                else:
+                    print(f"WARN {r['title']}: {e}")
+                    time.sleep(10)
+                    break
+        if data is None:
             continue
         links = data.get("linksByPlatform", {})
         sp = (links.get("spotify") or {}).get("url")
