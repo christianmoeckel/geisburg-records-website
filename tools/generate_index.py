@@ -97,10 +97,7 @@ def main():
 {grid}
     </main>
     <div class="impressum">
-        <p>Geisburg Records, Studios &amp; Publishing c/o Christian Möckel</p>
-        <p>Geisbergstraße 11 II</p>
-        <p>10777 Berlin, Germany</p>
-        <p>info@geisburgrecords.com | Tel: +4915236973736</p>
+        <p>info@geisburgrecords.com</p>
     </div>
 </body>
 

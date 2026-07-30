@@ -69,3 +69,43 @@ nav a:hover {
     padding: 20px;
     margin: auto; /* Center the grid container */
     max-width: 1200px; /* Adjust based on your content size */
+}
+
+.release-info {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.release-title {
+    font-weight: bold;
+}
+
+.release-artist {
+    font-style: italic;
+}
+
+.release-info a {
+    margin-top: 8px;
+    display: inline-block;
+}
+
+.impressum {
+    text-align: center;
+    padding: 30px 20px;
+    font-size: 14px;
+}
+
+@media (max-width: 800px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 500px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+    .logo-container img {
+        max-width: 40%;
+    }
+}
