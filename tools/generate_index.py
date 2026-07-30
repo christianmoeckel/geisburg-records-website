@@ -54,13 +54,14 @@ def main():
                 bc_url = next((u for k, u in bc.items() if k.startswith(key) or u.rsplit("/", 1)[-1].rstrip("-0123456789") == slug), None)
             if not bc_url:
                 missing.append(r["title"])
+        # Bandcamp first (eigene Plattform, korrekte Schreibweise) — song.link als Streaming-Zweitlink
         sl = r.get("songlink")
-        if sl:
-            links.append(("listen", sl))
-            if bc_url:
-                links.append((r.get("bandcamp_label", "bandcamp"), bc_url))
-        elif bc_url:
+        if bc_url:
             links.append((r.get("bandcamp_label", "listen"), bc_url))
+            if sl:
+                links.append(("streaming", sl))
+        elif sl:
+            links.append(("listen", sl))
         for l in r.get("links", []):
             if sl and l["label"] == "listen":
                 continue  # songlink ersetzt alte Einzel-Smartlinks
