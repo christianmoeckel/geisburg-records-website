@@ -6,133 +6,152 @@
       "artist": "bland & pale",
       "cover": "assets/cover_minds_eye-min.jpg",
       "bandcamp": true,
-      "songlink": "https://song.link/i/6774253809"
+      "songlink": "https://song.link/de/i/6774253809",
+      "applemusic": "https://geo.music.apple.com/de/album/_/6774253807?i=6774253809&mt=1&app=music&ls=1&at=1000lHKX&ct=api_http&itscg=30200&itsct=odsl_m"
     },
     {
       "title": "HIMMEL, BABY",
       "artist": "syn",
       "cover": "assets/cover_himmel_baby-min.jpg",
       "bandcamp": true,
-      "songlink": "https://song.link/i/6773244277"
+      "songlink": "https://song.link/de/i/6773244277",
+      "applemusic": "https://geo.music.apple.com/de/album/_/6773244032?i=6773244277&mt=1&app=music&ls=1&at=1000lHKX&ct=api_http&itscg=30200&itsct=odsl_m"
     },
     {
       "title": "Die Welt ist gestreckt",
       "artist": "Kresse 3",
       "cover": "assets/cover_die_welt_ist_gestreckt-min.jpg",
       "bandcamp": true,
-      "songlink": "https://song.link/i/6767582145"
+      "songlink": "https://song.link/de/i/6767582145",
+      "applemusic": "https://geo.music.apple.com/de/album/_/1862076330?i=1862076333&mt=1&app=music&ls=1&at=1000lHKX&ct=api_http&itscg=30200&itsct=odsl_m"
     },
     {
       "title": "in my dreamz",
       "artist": "bland & pale",
       "cover": "assets/cover_in_my_dreamz-min.jpg",
       "bandcamp": true,
-      "songlink": "https://song.link/i/6762600798"
+      "songlink": "https://song.link/de/i/6762600798",
+      "applemusic": "https://geo.music.apple.com/de/album/_/1894800752?i=6762600798&mt=1&app=music&ls=1&at=1000lHKX&ct=api_http&itscg=30200&itsct=odsl_m"
     },
     {
       "title": "I Still Slay",
       "artist": "Loulia & Tim Schoene",
       "cover": "assets/cover_i_still_slay-min.jpg",
       "bandcamp": true,
-      "songlink": "https://song.link/i/6762801280"
+      "songlink": "https://song.link/de/i/6762801280",
+      "applemusic": "https://geo.music.apple.com/de/album/_/1895018278?i=6762801280&mt=1&app=music&ls=1&at=1000lHKX&ct=api_http&itscg=30200&itsct=odsl_m"
     },
     {
       "title": "Kino",
       "artist": "Kresse 3",
       "cover": "assets/cover_kino-min.jpg",
       "bandcamp": true,
-      "songlink": "https://song.link/i/1885863721"
+      "songlink": "https://song.link/de/i/1885863721",
+      "applemusic": "https://geo.music.apple.com/de/album/_/1885863720?i=1885863721&mt=1&app=music&ls=1&at=1000lHKX&ct=api_http&itscg=30200&itsct=odsl_m"
     },
     {
       "title": "heaven",
       "artist": "bland & pale",
       "cover": "assets/cover_heaven-min.jpg",
       "bandcamp": true,
-      "songlink": "https://song.link/i/1880080414"
+      "songlink": "https://song.link/de/i/1880080414",
+      "applemusic": "https://geo.music.apple.com/de/album/_/1880080410?i=1880080414&mt=1&app=music&ls=1&at=1000lHKX&ct=api_http&itscg=30200&itsct=odsl_m"
     },
     {
       "title": "HOTEL BERLIN",
       "artist": "HOTEL BERLIN",
       "cover": "assets/cover_hotel_berlin-min.jpg",
       "bandcamp": true,
-      "songlink": "https://album.link/i/1880164830"
+      "songlink": "https://album.link/de/i/1880164830",
+      "applemusic": "https://geo.music.apple.com/de/album/_/1880164830?mt=1&app=music&ls=1&at=1000lHKX&ct=api_http&itscg=30200&itsct=odsl_m"
     },
     {
       "title": "Wunsch im All",
       "artist": "Kresse 3",
       "cover": "assets/cover_wunsch_im_all-min.jpg",
       "bandcamp": true,
-      "songlink": "https://song.link/i/1876810809"
+      "songlink": "https://song.link/de/i/1876810809",
+      "applemusic": "https://geo.music.apple.com/de/album/_/1876810806?i=1876810809&mt=1&app=music&ls=1&at=1000lHKX&ct=api_http&itscg=30200&itsct=odsl_m"
     },
     {
       "title": "Kassandra",
       "artist": "Kresse 3",
       "cover": "assets/cover_kassandra-min.jpg",
       "bandcamp": true,
-      "songlink": "https://song.link/i/1862076333"
+      "songlink": "https://song.link/de/i/1862076333",
+      "applemusic": "https://geo.music.apple.com/de/album/_/1862076330?i=1862076333&mt=1&app=music&ls=1&at=1000lHKX&ct=api_http&itscg=30200&itsct=odsl_m"
     },
     {
       "title": "Slow Pace",
       "artist": "Loulia",
       "cover": "assets/cover_slow_pace-min.jpg",
       "bandcamp": true,
-      "songlink": "https://song.link/i/1850716129"
+      "songlink": "https://song.link/de/i/1850716129",
+      "applemusic": "https://geo.music.apple.com/de/album/_/1850716128?i=1850716129&mt=1&app=music&ls=1&at=1000lHKX&ct=api_http&itscg=30200&itsct=odsl_m"
     },
     {
       "title": "Baum",
       "artist": "Cowbridge",
       "cover": "assets/cover_baum-min.jpg",
       "bandcamp": true,
-      "songlink": "https://song.link/i/1845445807"
+      "songlink": "https://song.link/de/i/1845445807",
+      "applemusic": "https://geo.music.apple.com/de/album/_/1845445804?i=1845445807&mt=1&app=music&ls=1&at=1000lHKX&ct=api_http&itscg=30200&itsct=odsl_m"
     },
     {
       "title": "Lügen an die Wand",
       "artist": "Hosenadler, emi x, HOTEL BERLIN",
       "cover": "assets/cover_hb_luegen-min.jpg",
       "bandcamp": true,
-      "songlink": "https://song.link/i/1880136630"
+      "songlink": "https://song.link/de/i/1880136630",
+      "applemusic": "https://geo.music.apple.com/de/album/_/1880136625?i=1880136630&mt=1&app=music&ls=1&at=1000lHKX&ct=api_http&itscg=30200&itsct=odsl_m"
     },
     {
       "title": "Palo Santo",
       "artist": "Mona Rowey, pensif, HOTEL BERLIN",
       "cover": "assets/cover_hb_palo_santo-min.jpg",
       "bandcamp": true,
-      "songlink": "https://song.link/i/1880066959"
+      "songlink": "https://song.link/de/i/1880066959",
+      "applemusic": "https://geo.music.apple.com/de/album/_/1880066958?i=1880066959&mt=1&app=music&ls=1&at=1000lHKX&ct=api_http&itscg=30200&itsct=odsl_m"
     },
     {
       "title": "U.N.I.",
       "artist": "Loulia, Made in M, HOTEL BERLIN",
       "cover": "assets/cover_hb_uni-min.jpg",
       "bandcamp": true,
-      "songlink": "https://song.link/i/1880023226"
+      "songlink": "https://song.link/de/i/1880023226",
+      "applemusic": "https://geo.music.apple.com/de/album/_/1880023222?i=1880023226&mt=1&app=music&ls=1&at=1000lHKX&ct=api_http&itscg=30200&itsct=odsl_m"
     },
     {
       "title": "BNICE2URFRIENDS",
       "artist": "Shlomes",
       "cover": "assets/cover_bnice2urfriends-min.jpg",
       "bandcamp": true,
-      "songlink": "https://song.link/i/1818057798"
+      "songlink": "https://song.link/de/i/1818057798",
+      "applemusic": "https://geo.music.apple.com/de/album/_/1818057672?i=1818057798&mt=1&app=music&ls=1&at=1000lHKX&ct=api_http&itscg=30200&itsct=odsl_m"
     },
     {
       "title": "hitch a ride",
       "artist": "bland & pale, pensif, HOTEL BERLIN",
       "cover": "assets/cover_hb_hitch_a_ride-min.jpg",
       "bandcamp": true,
-      "songlink": "https://song.link/i/1880080185"
+      "songlink": "https://song.link/de/i/1880080185",
+      "applemusic": "https://geo.music.apple.com/de/album/_/1880080184?i=1880080185&mt=1&app=music&ls=1&at=1000lHKX&ct=api_http&itscg=30200&itsct=odsl_m"
     },
     {
       "title": "April 29th",
       "artist": "Mío Ma, Skyline Sun, tuftyhead, HOTEL BERLIN",
       "cover": "assets/cover_hb_april_29th-min.jpg",
       "bandcamp": true,
-      "songlink": "https://song.link/i/1880024072"
+      "songlink": "https://song.link/de/i/1880024072",
+      "applemusic": "https://geo.music.apple.com/de/album/_/1880024071?i=1880024072&mt=1&app=music&ls=1&at=1000lHKX&ct=api_http&itscg=30200&itsct=odsl_m"
     },
     {
       "title": "Panama Outro",
       "artist": "Räubertochter, Frisch, HOTEL BERLIN",
       "cover": "assets/cover_hb_panama_outro-min.jpg",
       "bandcamp": true,
-      "songlink": "https://song.link/i/1880067072"
+      "songlink": "https://song.link/de/i/1880067072",
+      "applemusic": "https://geo.music.apple.com/de/album/_/1880067067?i=1880067072&mt=1&app=music&ls=1&at=1000lHKX&ct=api_http&itscg=30200&itsct=odsl_m"
     },
     {
       "title": "Let It Die",
