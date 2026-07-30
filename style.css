@@ -77,11 +77,11 @@ nav a:hover {
 }
 
 .release-title {
-    font-weight: bold;
+    font-weight: normal;
 }
 
 .release-artist {
-    font-style: italic;
+    font-style: normal;
 }
 
 .release-info a {
