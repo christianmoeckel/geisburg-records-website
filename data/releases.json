@@ -144,7 +144,8 @@
    "isrc": "CH6542591584",
    "deezer": "https://www.deezer.com/track/3637356242",
    "bandcamp_url": "https://geisburgrecords.bandcamp.com/track/slow-pace",
-   "soundcloud": "https://soundcloud.com/geisburgrecords/slow-pace"
+   "soundcloud": "https://soundcloud.com/geisburgrecords/slow-pace",
+   "spotify": "https://open.spotify.com/track/5gkSmLDrfgwLUywDjWgJbP"
   },
   {
    "title": "Baum",
@@ -157,7 +158,8 @@
    "isrc": "CH6542581339",
    "deezer": "https://www.deezer.com/track/3596632012",
    "bandcamp_url": "https://geisburgrecords.bandcamp.com/track/baum",
-   "soundcloud": "https://soundcloud.com/geisburgrecords/baum?utm_medium=api&utm_campaign=social_sharing&utm_source=id_333928"
+   "soundcloud": "https://soundcloud.com/geisburgrecords/baum?utm_medium=api&utm_campaign=social_sharing&utm_source=id_333928",
+   "spotify": "https://open.spotify.com/track/0fNCnqTMDIT0GIW4kWfGiz"
   },
   {
    "title": "Lügen an die Wand",
@@ -343,7 +345,9 @@
    "songlink": "https://song.link/de/i/1786322999",
    "applemusic": "https://geo.music.apple.com/de/album/_/1786322989?i=1786322999&mt=1&app=music&ls=1&at=1000lHKX&ct=api_http&itscg=30200&itsct=odsl_m",
    "slug": "anything-that-you-d-like",
-   "spotify": "https://open.spotify.com/track/5ugsb2PYJ0PkcH0FeQBafP"
+   "spotify": "https://open.spotify.com/track/5ugsb2PYJ0PkcH0FeQBafP",
+   "bandcamp_url": "https://geisburgrecords.bandcamp.com/track/anything-that-youd-like",
+   "soundcloud": "https://soundcloud.com/geisburgrecords/anything-that-youd-like"
   },
   {
    "title": "Nothing Is Rounder Than the Sun",
