@@ -30,12 +30,20 @@ def fetch_bandcamp_map():
     req = urllib.request.Request(BC + "/music", headers={"User-Agent": "Mozilla/5.0"})
     page = urllib.request.urlopen(req, timeout=30).read().decode("utf-8", "replace")
     pairs = {}
-    for m in re.finditer(r'href="(/(?:album|track)/[^"]+)"[^>]*>\s*<p class="title">\s*([^<]+?)\s*<', page):
-        pairs[norm(m.group(2))] = BC + m.group(1)
-    # Fallback fuer Markup-Varianten: Titel aus dem Slug ableiten
-    for m in re.finditer(r'href="(/(?:album|track)/([^"/?]+))"', page):
-        slug_title = norm(m.group(2).replace("-", " "))
-        pairs.setdefault(slug_title, BC + m.group(1))
+    # WICHTIG: /music rendert nur die neuesten ~16 serverseitig — der VOLLE Katalog steckt
+    # im data-client-items-JSON des Grids (HTML-escaped). Zuerst das parsen:
+    m = re.search(r'data-client-items="([^"]+)"', page)
+    if m:
+        items = json.loads(html.unescape(m.group(1)))
+        for it in items:
+            url = it.get("page_url") or ""
+            title = it.get("title") or ""
+            if url and title:
+                pairs[norm(title)] = url if url.startswith("http") else BC + url
+    for mm in re.finditer(r'href="(/(?:album|track)/[^"]+)"[^>]*>\s*<p class="title">\s*([^<]+?)\s*<', page):
+        pairs.setdefault(norm(mm.group(2)), BC + mm.group(1))
+    for mm in re.finditer(r'href="(/(?:album|track)/([^"/?]+))"', page):
+        pairs.setdefault(norm(mm.group(2).replace("-", " ")), BC + mm.group(1))
     return pairs
 
 
