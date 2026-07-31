@@ -106,8 +106,8 @@
    "amazonmusic": "https://music.amazon.de/albums/B0GQ4ZHJNF"
   },
   {
-   "title": "CHECK IN",
-   "artist": "Various Artists",
+   "title": "Check In ~ Hotel Berlin",
+   "artist": "Hotel Berlin and various artists",
    "cover": "assets/cover_hotel_berlin-min.jpg",
    "bandcamp": true,
    "songlink": "https://album.link/de/i/1880164830",
@@ -162,9 +162,7 @@
    "deezer": "https://www.deezer.com/track/3637356242",
    "bandcamp_url": "https://geisburgrecords.bandcamp.com/track/slow-pace",
    "soundcloud": "https://soundcloud.com/geisburgrecords/slow-pace",
-   "spotify": "https://open.spotify.com/track/5gkSmLDrfgwLUywDjWgJbP",
-   "youtube": "https://www.youtube.com/watch?v=p0kpu5_l_5E",
-   "musicvideo": "https://www.youtube.com/watch?v=p0kpu5_l_5E"
+   "spotify": "https://open.spotify.com/track/5gkSmLDrfgwLUywDjWgJbP"
   },
   {
    "title": "Baum",
