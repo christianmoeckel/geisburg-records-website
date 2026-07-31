@@ -2,6 +2,13 @@
  "_doku": "Quelle des Release-Grids auf index.html. Array-Reihenfolge = Anzeige-Reihenfolge (neueste oben). 'bandcamp': true => tools/generate_index.py sucht den Titel live auf geisburgrecords.bandcamp.com/music und setzt den Link, sobald published (vorher erscheint der Eintrag ohne Link). 'bandcamp_title' überschreibt den Match-Titel. 'links' = feste Zusatz-/Fallback-Links.",
  "releases": [
   {
+   "title": "you keep calling my name",
+   "artist": "bland & pale",
+   "cover": "assets/cover_you_keep_calling_my_name-min.jpg",
+   "slug": "you-keep-calling-my-name",
+   "note": "out 27.08.2026"
+  },
+  {
    "title": "mind's eye",
    "artist": "bland & pale",
    "cover": "assets/cover_minds_eye-min.jpg",
