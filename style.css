@@ -178,6 +178,18 @@ nav a:hover {
     color: white;
 }
 
+.listen-btn-mv {
+    background: #c40000;
+    border-color: #c40000;
+    color: white;
+    font-weight: bold;
+}
+
+.listen-btn-mv:hover {
+    background: white;
+    color: #c40000;
+}
+
 .listen-note {
     color: #666;
 }

@@ -16,13 +16,15 @@ import hashlib as _h
 CSSV = _h.md5((ROOT / "style.css").read_bytes()).hexdigest()[:8]
 
 # Christians Reihenfolge (30.07. nachts): Spotify, Apple Music, Bandcamp, SoundCloud — dann Rest
+# (31.07.: + YouTube/Deezer/Amazon unten; Musikvideo als hervorgehobener Extra-Button oben)
 SERVICES = [
     ("spotify", "Spotify"),
     ("applemusic", "Apple Music"),
     ("bandcamp_url", "Bandcamp"),
     ("soundcloud", "SoundCloud"),
-    ("deezer", "Deezer"),
     ("youtube", "YouTube"),
+    ("deezer", "Deezer"),
+    ("amazonmusic", "Amazon Music"),
 ]
 
 
@@ -37,6 +39,9 @@ def main():
             f'            <a class="listen-btn" href="{html.escape(r[f])}">{label}</a>'
             for f, label in SERVICES if r.get(f)
         )
+        if r.get("musicvideo"):
+            mv = f'            <a class="listen-btn listen-btn-mv" href="{html.escape(r["musicvideo"])}">&#9654;&#xFE0E; Musikvideo</a>'
+            buttons = mv + ("\n" + buttons if buttons else "")
         if not buttons:
             buttons = '            <p class="listen-note">coming soon</p>'
         page = f"""<!DOCTYPE html>
