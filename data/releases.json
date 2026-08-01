@@ -21,7 +21,8 @@
    "spotify": "https://open.spotify.com/track/5LfHcJBde0dbuQmp8cXJHP",
    "youtube": "https://www.youtube.com/watch?v=kuQ_FZajBl4",
    "deezer": "https://www.deezer.com/track/4050567181",
-   "amazonmusic": "https://music.amazon.de/albums/B0H379BLBM"
+   "amazonmusic": "https://music.amazon.de/albums/B0H379BLBM",
+   "musicvideo": "https://www.youtube.com/watch?v=kuQ_FZajBl4"
   },
   {
    "title": "HIMMEL, BABY",
@@ -66,7 +67,8 @@
    "soundcloud": "https://soundcloud.com/geisburgrecords/in-my-dreamz",
    "spotify": "https://open.spotify.com/track/0NfyS5buxQOoQTfywYqu9e",
    "youtube": "https://www.youtube.com/watch?v=_JEYwOnQkrk",
-   "amazonmusic": "https://music.amazon.de/albums/B0GXL2YDWC"
+   "amazonmusic": "https://music.amazon.de/albums/B0GXL2YDWC",
+   "musicvideo": "https://www.youtube.com/watch?v=_JEYwOnQkrk"
   },
   {
    "title": "I Still Slay",
@@ -377,7 +379,8 @@
    "bandcamp_url": "https://geisburgrecords.bandcamp.com/track/sold-on-the-street",
    "soundcloud": "https://soundcloud.com/geisburgrecords/sold-on-the-street?utm_medium=api&utm_campaign=social_sharing&utm_source=id_333928",
    "spotify": "https://open.spotify.com/track/3iH0s7XNiMwPCgfg7EW1w9",
-   "youtube": "https://www.youtube.com/watch?v=4KCdlHCikpk"
+   "youtube": "https://www.youtube.com/watch?v=4KCdlHCikpk",
+   "musicvideo": "https://www.youtube.com/watch?v=4KCdlHCikpk"
   },
   {
    "title": "Anything That You'd Like",
@@ -426,7 +429,8 @@
    "bandcamp_url": "https://geisburgrecords.bandcamp.com/track/untouched",
    "soundcloud": "https://soundcloud.com/geisburgrecords/untouched?utm_medium=api&utm_campaign=social_sharing&utm_source=id_333928",
    "spotify": "https://open.spotify.com/track/6AGeoAsv0McBLGSLtxi9k4",
-   "youtube": "https://www.youtube.com/watch?v=FeaZ0XSQ5Og"
+   "youtube": "https://www.youtube.com/watch?v=FeaZ0XSQ5Og",
+   "musicvideo": "https://www.youtube.com/watch?v=FeaZ0XSQ5Og"
   },
   {
    "title": "FLIGHTMODE FIRSTCLASS",
@@ -452,7 +456,8 @@
    "bandcamp_url": "https://geisburgrecords.bandcamp.com/track/levitate",
    "soundcloud": "https://soundcloud.com/geisburgrecords/levitate?utm_medium=api&utm_campaign=social_sharing&utm_source=id_333928",
    "spotify": "https://open.spotify.com/track/6JtsayNq2n87hEimamIRug",
-   "youtube": "https://www.youtube.com/watch?v=xYrJrujOmPE"
+   "youtube": "https://www.youtube.com/watch?v=xYrJrujOmPE",
+   "musicvideo": "https://www.youtube.com/watch?v=xYrJrujOmPE"
   },
   {
    "title": "can't stop",
@@ -500,7 +505,8 @@
    "soundcloud": "https://soundcloud.com/geisburgrecords/head-start",
    "spotify": "https://open.spotify.com/track/0zcxdq8zfUZqIa2F840nOI",
    "youtube": "https://www.youtube.com/watch?v=QuAK54vo_8s",
-   "amazonmusic": "https://music.amazon.de/albums/B0DQWR8CDF"
+   "amazonmusic": "https://music.amazon.de/albums/B0DQWR8CDF",
+   "musicvideo": "https://www.youtube.com/watch?v=QuAK54vo_8s"
   },
   {
    "title": "win this time",
@@ -515,7 +521,8 @@
    "bandcamp_url": "https://geisburgrecords.bandcamp.com/track/win-this-time-2",
    "soundcloud": "https://soundcloud.com/geisburgrecords/win-this-time",
    "spotify": "https://open.spotify.com/track/7lld61xopn0WzXoJBDzLOp",
-   "youtube": "https://www.youtube.com/watch?v=Zbueah0p5XE"
+   "youtube": "https://www.youtube.com/watch?v=Zbueah0p5XE",
+   "musicvideo": "https://www.youtube.com/watch?v=Zbueah0p5XE"
   },
   {
    "title": "Wintergarten",
@@ -573,7 +580,8 @@
    "bandcamp_url": "https://geisburgrecords.bandcamp.com/track/call-me",
    "soundcloud": "https://soundcloud.com/geisburgrecords/call-me",
    "spotify": "https://open.spotify.com/track/3gdhScsq8Uy2dOkcjUqkai",
-   "youtube": "https://www.youtube.com/watch?v=-HuJvS1_qyU"
+   "youtube": "https://www.youtube.com/watch?v=-HuJvS1_qyU",
+   "musicvideo": "https://www.youtube.com/watch?v=-HuJvS1_qyU"
   },
   {
    "title": "11 in the morning",
@@ -588,7 +596,8 @@
    "bandcamp_url": "https://geisburgrecords.bandcamp.com/track/11-in-the-morning",
    "soundcloud": "https://soundcloud.com/geisburgrecords/11-in-the-morning-1",
    "spotify": "https://open.spotify.com/track/15NawFVmEtfZbyuPHa2WNH",
-   "youtube": "https://www.youtube.com/watch?v=-yVjbc96Ey4"
+   "youtube": "https://www.youtube.com/watch?v=-yVjbc96Ey4",
+   "musicvideo": "https://www.youtube.com/watch?v=-yVjbc96Ey4"
   },
   {
    "title": "tv jingle",
@@ -603,7 +612,8 @@
    "bandcamp_url": "https://geisburgrecords.bandcamp.com/track/tv-jingle",
    "soundcloud": "https://soundcloud.com/geisburgrecords/tv-jingle",
    "spotify": "https://open.spotify.com/track/4CNffPxlxgnB0fhjvu8rzA",
-   "youtube": "https://www.youtube.com/watch?v=ud2giQmyN60"
+   "youtube": "https://www.youtube.com/watch?v=ud2giQmyN60",
+   "musicvideo": "https://www.youtube.com/watch?v=ud2giQmyN60"
   },
   {
    "title": "Cannonball",
@@ -665,7 +675,8 @@
    "bandcamp_url": "https://geisburgrecords.bandcamp.com/track/i-cant-stand-the-light",
    "soundcloud": "https://soundcloud.com/geisburgrecords/i-cant-stand-the-light",
    "spotify": "https://open.spotify.com/track/2vWaVkaH6m7IPCnmfMRQxb",
-   "youtube": "https://www.youtube.com/watch?v=kIkG59i-Yx0"
+   "youtube": "https://www.youtube.com/watch?v=kIkG59i-Yx0",
+   "musicvideo": "https://www.youtube.com/watch?v=t2jIZ5TNaI8"
   },
   {
    "title": "Fire EP",
