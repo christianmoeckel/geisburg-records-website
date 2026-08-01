@@ -9,17 +9,6 @@
    "note": "out 27.08.2026"
   },
   {
-   "title": "Forever",
-   "artist": "Mona Rowey",
-   "cover": "assets/cover_forever-min.jpg",
-   "slug": "forever",
-   "bandcamp_url": "https://geisburgrecords.bandcamp.com/track/forever",
-   "soundcloud": "https://soundcloud.com/geisburgrecords/forever",
-   "spotify": "https://open.spotify.com/track/1UYgj0cXhCWbJHbpFQiJsg",
-   "applemusic": "https://music.apple.com/de/album/forever/1815281785?i=1815281787&uo=4",
-   "deezer": "https://www.deezer.com/track/3371079071"
-  },
-  {
    "title": "mind's eye",
    "artist": "bland & pale",
    "cover": "assets/cover_minds_eye-min.jpg",
@@ -60,7 +49,8 @@
    "bandcamp_url": "https://geisburgrecords.bandcamp.com/album/die-welt-ist-gestreckt",
    "soundcloud": "https://soundcloud.com/geisburgrecords/sets/die-welt-ist-gestreckt?utm_medium=api&utm_campaign=social_sharing&utm_source=id_333928",
    "spotify": "https://open.spotify.com/album/7jxX3QqPr7538w9sdyApYG",
-   "amazonmusic": "https://music.amazon.de/albums/B0H1212HR4"
+   "amazonmusic": "https://music.amazon.de/albums/B0H1212HR4",
+   "youtube": "https://www.youtube.com/playlist?list=OLAK5uy_mCDbDqR5qaN1AdwY-QDiFNQakgALs5aUU"
   },
   {
    "title": "in my dreamz",
@@ -134,7 +124,7 @@
    "bandcamp_url": "https://geisburgrecords.bandcamp.com/album/check-in",
    "soundcloud": "https://soundcloud.com/geisburgrecords/sets/check-in?utm_medium=api&utm_campaign=social_sharing&utm_source=id_333928",
    "spotify": "https://open.spotify.com/album/0E02VikZfCizXwnbhw576J",
-   "youtube": "https://www.youtube.com/watch?v=85rK-TqfKeM"
+   "youtube": "https://www.youtube.com/playlist?list=OLAK5uy_kdhcPwFZk5E1ds-d_Sl8GXiyzJmgYzx5Y"
   },
   {
    "title": "Wunsch im All",
@@ -252,7 +242,8 @@
    "bandcamp_url": "https://geisburgrecords.bandcamp.com/album/bnice2urfriends",
    "soundcloud": "https://soundcloud.com/geisburgrecords/sets/bnice2urfriends?utm_medium=api&utm_campaign=social_sharing&utm_source=id_333928",
    "spotify": "https://open.spotify.com/album/4kj10NJqVuHVCG3GaMxEnZ",
-   "amazonmusic": "https://music.amazon.de/albums/B0FBHS1HQN"
+   "amazonmusic": "https://music.amazon.de/albums/B0FBHS1HQN",
+   "youtube": "https://www.youtube.com/playlist?list=OLAK5uy_l8Bhxa3LYkVFeO2hX1Bn9NLC57fTsZKdw"
   },
   {
    "title": "hitch a ride",
@@ -342,6 +333,17 @@
    "soundcloud": "https://soundcloud.com/geisburgrecords/sparkle-hop?utm_medium=api&utm_campaign=social_sharing&utm_source=id_333928",
    "spotify": "https://open.spotify.com/track/6dWbhGP4MhXGgy4nFyaEfQ",
    "youtube": "https://www.youtube.com/watch?v=yHtVlFYyCN0"
+  },
+  {
+   "title": "Forever",
+   "artist": "Mona Rowey",
+   "cover": "assets/cover_forever-min.jpg",
+   "slug": "forever",
+   "bandcamp_url": "https://geisburgrecords.bandcamp.com/track/forever",
+   "soundcloud": "https://soundcloud.com/geisburgrecords/forever",
+   "spotify": "https://open.spotify.com/track/1UYgj0cXhCWbJHbpFQiJsg",
+   "applemusic": "https://music.apple.com/de/album/forever/1815281785?i=1815281787&uo=4",
+   "deezer": "https://www.deezer.com/track/3371079071"
   },
   {
    "title": "End of the World",
@@ -465,7 +467,8 @@
    "bandcamp_url": "https://geisburgrecords.bandcamp.com/track/cant-stop",
    "soundcloud": "https://soundcloud.com/geisburgrecords/teuer-cant-stop?utm_medium=api&utm_campaign=social_sharing&utm_source=id_333928",
    "spotify": "https://open.spotify.com/track/0L17Vk88XDtPFUyifZ404T",
-   "youtube": "https://www.youtube.com/watch?v=05OjbJg_pZc"
+   "youtube": "https://www.youtube.com/watch?v=FQKqHphhsEU",
+   "musicvideo": "https://www.youtube.com/watch?v=FQKqHphhsEU"
   },
   {
    "title": "Memories of Summer",
@@ -480,7 +483,7 @@
    "bandcamp_url": "https://geisburgrecords.bandcamp.com/album/memories-of-summer",
    "soundcloud": "https://soundcloud.com/geisburgrecords/sets/memories-of-summer?utm_medium=api&utm_campaign=social_sharing&utm_source=id_333928",
    "spotify": "https://open.spotify.com/album/7qM0fodXHCPZO6KL3hZ5nM",
-   "youtube": "https://www.youtube.com/watch?v=EgkSCUBKzL0",
+   "youtube": "https://www.youtube.com/playlist?list=OLAK5uy_kgKKTxUrF_dKPYJjPuedHSJilei9YfH0g",
    "amazonmusic": "https://music.amazon.de/albums/B0D8TP85MZ"
   },
   {
@@ -632,7 +635,8 @@
    "deezer": "https://www.deezer.com/track/3150788891",
    "bandcamp_url": "https://geisburgrecords.bandcamp.com/track/free-shipping",
    "spotify": "https://open.spotify.com/track/6ZrmAwdZ6SwaotlUqFRniM",
-   "applemusic": "https://music.apple.com/de/album/free-shipping-feat-atomik-sahara-marshall-anderson/1786564652?i=1786564654&uo=4"
+   "applemusic": "https://music.apple.com/de/album/free-shipping-feat-atomik-sahara-marshall-anderson/1786564652?i=1786564654&uo=4",
+   "youtube": "https://www.youtube.com/watch?v=5FqMdtPkqak"
   },
   {
    "title": "Ballon",

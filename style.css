@@ -178,16 +178,15 @@ nav a:hover {
     color: white;
 }
 
-.listen-btn-mv {
-    background: #c40000;
-    border-color: #c40000;
-    color: white;
-    font-weight: bold;
+.listen-btn-small {
+    font-size: 14px;
+    padding: 8px;
 }
 
-.listen-btn-mv:hover {
-    background: white;
-    color: #c40000;
+.release-info .mv-line {
+    display: block;
+    font-size: 14px;
+    margin-top: 2px;
 }
 
 .listen-note {

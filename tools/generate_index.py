@@ -71,12 +71,14 @@ def main():
         # Christians Endstand (30.07. nachts): „listen" führt IMMER auf unsere EIGENE
         # Smartlink-Seite listen/<slug>.html (alle Dienste dort; tools/generate_listen_pages.py).
         links.append(("listen", f"listen/{r['slug']}.html"))
+        if r.get("musicvideo"):
+            links.append(("Music Video", r["musicvideo"]))
         for l in r.get("links", []):
             if l["label"] == "listen":
                 continue  # eigene Landing ersetzt alte Direkt-Smartlinks
             links.append((l["label"], l["url"]))
         a_tags = "\n".join(
-            f'                <a href="{html.escape(u)}">{html.escape(lab)}</a>' for lab, u in links
+            f'                <a href="{html.escape(u)}"{" class=\"mv-line\"" if lab == "Music Video" else ""}>{html.escape(lab)}</a>' for lab, u in links
         )
         cards.append(f"""        <div class="release">
             <img src="{html.escape(r['cover'])}" alt="Release Cover">

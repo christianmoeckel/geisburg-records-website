@@ -25,6 +25,7 @@ SERVICES = [
     ("youtube", "YouTube"),
     ("deezer", "Deezer"),
     ("amazonmusic", "Amazon Music"),
+    ("musicvideo", "Music Video"),
 ]
 
 
@@ -36,12 +37,9 @@ def main():
     for r in d["releases"]:
         slug = r["slug"]
         buttons = "\n".join(
-            f'            <a class="listen-btn" href="{html.escape(r[f])}">{label}</a>'
+            f'            <a class="listen-btn{" listen-btn-small" if f == "musicvideo" else ""}" href="{html.escape(r[f])}">{label}</a>'
             for f, label in SERVICES if r.get(f)
         )
-        if r.get("musicvideo"):
-            mv = f'            <a class="listen-btn listen-btn-mv" href="{html.escape(r["musicvideo"])}">&#9654;&#xFE0E; Musikvideo</a>'
-            buttons = mv + ("\n" + buttons if buttons else "")
         if not buttons:
             buttons = '            <p class="listen-note">coming soon</p>'
         page = f"""<!DOCTYPE html>
