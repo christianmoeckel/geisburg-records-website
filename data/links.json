@@ -2,11 +2,11 @@
  "_kommentar": "Bio-Page /links: max 5 Links, Titel selbsterklaerend, keine Subtitles (Christian 01.08.). Release-Slot = erster RELEASED Eintrag aus releases.json.",
  "links": [
   {
-   "label": "Geisburg Records ~ All Releases",
+   "label": "All Releases",
    "url": "https://geisburgrecords.com/"
   },
   {
-   "label": "Fresh Finds ~ Weekly Berlin Underground Playlist",
+   "label": "Fresh Finds ~ Weekly Berlin Song Selection",
    "url": "https://open.spotify.com/playlist/1owAFr1EJkehkSdwPWNy9g"
   },
   {
