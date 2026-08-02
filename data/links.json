@@ -1,50 +1,25 @@
 {
- "_kommentar": "Statische Links der /links-Bio-Page. Der neueste Release wird AUTOMATISCH aus releases.json[0] davor gesetzt (generate_links_page.py).",
+ "_kommentar": "Bio-Page /links: max 5 Links, Titel selbsterklaerend, keine Subtitles (Christian 01.08.). Release-Slot = erster RELEASED Eintrag aus releases.json.",
  "links": [
   {
-   "label": "Official Website",
-   "url": "https://geisburgrecords.com/",
-   "sub": "geisburgrecords.com"
+   "label": "Geisburg Records ~ All Releases",
+   "url": "https://geisburgrecords.com/"
   },
   {
-   "label": "All Releases",
-   "url": "https://geisburgrecords.com/index.html",
-   "sub": "every song, every platform"
+   "label": "Fresh Finds ~ Weekly Berlin Underground Playlist",
+   "url": "https://open.spotify.com/playlist/1owAFr1EJkehkSdwPWNy9g"
+  },
+  {
+   "label": "FLIGHTMODE ~ Live Events Berlin",
+   "url": "https://www.instagram.com/flightmode.berlin/"
   },
   {
    "label": "E-Mail Newsletter",
-   "url": "https://geisburgrecords.com/newsletter.html",
-   "sub": "subscribe and stay up to date"
+   "url": "https://geisburgrecords.com/newsletter.html"
   },
   {
-   "label": "Fresh Finds ~ Berlin",
-   "url": "https://open.spotify.com/playlist/1owAFr1EJkehkSdwPWNy9g",
-   "sub": "our weekly Berlin underground playlist"
-  },
-  {
-   "label": "FLIGHTMODE Events",
-   "url": "https://geisburgrecords.com/events.html",
-   "sub": "live in Berlin"
-  },
-  {
-   "label": "FLIGHTMODE on Instagram",
-   "url": "https://www.instagram.com/flightmode.berlin/",
-   "sub": "@flightmode.berlin"
-  },
-  {
-   "label": "Bandcamp",
-   "url": "https://geisburgrecords.bandcamp.com",
-   "sub": "support the artists directly"
-  },
-  {
-   "label": "SoundCloud",
-   "url": "https://soundcloud.com/geisburgrecords",
-   "sub": ""
-  },
-  {
-   "label": "Contact / Demos",
-   "url": "mailto:info@geisburgrecords.com",
-   "sub": "info@geisburgrecords.com"
+   "label": "Contact & Demo Submissions",
+   "url": "mailto:info@geisburgrecords.com"
   }
  ]
 }

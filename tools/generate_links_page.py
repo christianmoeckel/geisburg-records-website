@@ -12,10 +12,9 @@ CSSV = _h.md5((ROOT / "style.css").read_bytes()).hexdigest()[:8]
 def main():
     rel = json.loads((ROOT / "data" / "releases.json").read_text())["releases"]
     cfg = json.loads((ROOT / "data" / "links.json").read_text())
-    newest = rel[0]
-    coming = bool(newest.get("note"))
-    tag = "COMING SOON" if coming else "NEW RELEASE"
-    sub = newest.get("note", "") if coming else "listen everywhere"
+    newest = next(r for r in rel if not r.get("note"))  # nur RELEASED im Slot
+    tag = "NEW RELEASE"
+    sub = "listen everywhere"
     release_card = f"""        <a class="bio-release" href="listen/{newest['slug']}.html">
             <img src="{html.escape(newest['cover'])}" alt="Cover">
             <div>
@@ -25,8 +24,7 @@ def main():
             </div>
         </a>"""
     buttons = "\n".join(
-        f'        <a class="listen-btn bio-btn" href="{html.escape(l["url"])}">{html.escape(l["label"])}'
-        + (f'<span class="bio-sub">{html.escape(l["sub"])}</span>' if l.get("sub") else "") + "</a>"
+        f'        <a class="listen-btn bio-btn" href="{html.escape(l["url"])}">{html.escape(l["label"])}</a>' 
         for l in cfg["links"])
     page = f"""<!DOCTYPE html>
 <html lang="en">
@@ -42,7 +40,6 @@ def main():
     <script data-goatcounter="https://geisburgrecords.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
     <main class="listen-page">
         <a href="index.html"><img class="bio-logo" src="assets/logo-upscaled-hochgeschoben.png" alt="Geisburg Records"></a>
-        <div class="listen-artist">independent record label, Berlin</div>
 {release_card}
         <div class="listen-buttons">
 {buttons}
