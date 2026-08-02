@@ -1,5 +1,5 @@
 {
- "_kommentar": "Statische Links der /links-Bio-Page. Der neueste Release wird AUTOMATISCH aus releases.json[0] davor gesetzt (generate_links.py).",
+ "_kommentar": "Statische Links der /links-Bio-Page. Der neueste Release wird AUTOMATISCH aus releases.json[0] davor gesetzt (generate_links_page.py).",
  "links": [
   {
    "label": "Official Website",
@@ -13,13 +13,23 @@
   },
   {
    "label": "E-Mail Newsletter",
-   "url": "newsletter.html",
+   "url": "https://geisburgrecords.com/newsletter.html",
    "sub": "subscribe and stay up to date"
   },
   {
+   "label": "Fresh Finds ~ Berlin",
+   "url": "https://open.spotify.com/playlist/1owAFr1EJkehkSdwPWNy9g",
+   "sub": "our weekly Berlin underground playlist"
+  },
+  {
    "label": "FLIGHTMODE Events",
-   "url": "events.html",
+   "url": "https://geisburgrecords.com/events.html",
    "sub": "live in Berlin"
+  },
+  {
+   "label": "FLIGHTMODE on Instagram",
+   "url": "https://www.instagram.com/flightmode.berlin/",
+   "sub": "@flightmode.berlin"
   },
   {
    "label": "Bandcamp",
