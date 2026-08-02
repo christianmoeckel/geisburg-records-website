@@ -70,7 +70,12 @@ def main():
                 missing.append(r["title"])
         # Christians Endstand (30.07. nachts): „listen" führt IMMER auf unsere EIGENE
         # Smartlink-Seite listen/<slug>.html (alle Dienste dort; tools/generate_listen_pages.py).
-        links.append(("listen", f"listen/{r['slug']}.html"))
+        # Release-Routine (01.08.): unreleased (note) + presave-URL -> "Pre-Save" zur iMusician-Page;
+        # am Release-Tag note/presave entfernen -> normaler listen-Link.
+        if r.get("note") and r.get("presave"):
+            links.append(("Pre-Save", r["presave"]))
+        else:
+            links.append(("listen", f"listen/{r['slug']}.html"))
         if r.get("musicvideo"):
             links.append(("Music Video", r["musicvideo"]))
         for l in r.get("links", []):

@@ -41,7 +41,10 @@ def main():
             for f, label in SERVICES if r.get(f)
         )
         if not buttons:
-            buttons = '            <p class="listen-note">coming soon</p>'
+            if r.get("presave"):
+                buttons = f'            <a class="listen-btn" href="{html.escape(r["presave"])}">Pre-Save</a>'
+            else:
+                buttons = '            <p class="listen-note">coming soon</p>'
         page = f"""<!DOCTYPE html>
 <html lang="en">
 
