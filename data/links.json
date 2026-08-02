@@ -1,0 +1,40 @@
+{
+ "_kommentar": "Statische Links der /links-Bio-Page. Der neueste Release wird AUTOMATISCH aus releases.json[0] davor gesetzt (generate_links.py).",
+ "links": [
+  {
+   "label": "Official Website",
+   "url": "https://geisburgrecords.com/",
+   "sub": "geisburgrecords.com"
+  },
+  {
+   "label": "All Releases",
+   "url": "https://geisburgrecords.com/index.html",
+   "sub": "every song, every platform"
+  },
+  {
+   "label": "E-Mail Newsletter",
+   "url": "newsletter.html",
+   "sub": "subscribe and stay up to date"
+  },
+  {
+   "label": "FLIGHTMODE Events",
+   "url": "events.html",
+   "sub": "live in Berlin"
+  },
+  {
+   "label": "Bandcamp",
+   "url": "https://geisburgrecords.bandcamp.com",
+   "sub": "support the artists directly"
+  },
+  {
+   "label": "SoundCloud",
+   "url": "https://soundcloud.com/geisburgrecords",
+   "sub": ""
+  },
+  {
+   "label": "Contact / Demos",
+   "url": "mailto:info@geisburgrecords.com",
+   "sub": "info@geisburgrecords.com"
+  }
+ ]
+}
