@@ -251,3 +251,75 @@ nav a:hover {
 .bio-btn:hover .bio-sub {
     color: #ccc;
 }
+
+/* Newsletter-Feld auf den Link-Seiten. Bewusst in der Optik der listen-btn gehalten
+   (Courier, 1px schwarzer Rahmen, Hover invertiert), damit es zur Seite gehoert und
+   nicht wie ein eingebettetes Fremdformular wirkt. Kein fremdes CSS, kein Webfont,
+   deshalb auch kein Flackern beim Laden. */
+.signup {
+    margin-top: 28px;
+    padding-top: 22px;
+    border-top: 1px solid #ddd;
+}
+
+.signup-text {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.signup-form {
+    display: flex;
+    gap: 8px;
+}
+
+.signup-input {
+    flex: 1;
+    min-width: 0;
+    padding: 12px;
+    border: 1px solid black;
+    border-radius: 0;
+    background: white;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.signup-input::placeholder {
+    color: #999;
+}
+
+.signup-input:focus {
+    outline: none;
+    border-width: 2px;
+    padding: 11px;
+}
+
+.signup-btn {
+    padding: 12px 18px;
+    border: 1px solid black;
+    background: white;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+}
+
+.signup-btn:hover {
+    background: black;
+    color: white;
+}
+
+.signup-note {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 12px;
+    color: #888;
+    margin-top: 8px;
+}
+
+.signup-note--ok {
+    color: black;
+}

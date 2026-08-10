@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css?v=73017850">
+    <link rel="stylesheet" href="style.css?v=736b0bd6">
     <title>FRESH FINDS ~ Berlin | GEISBURG RECORDS</title>
     <meta property="og:title" content="FRESH FINDS ~ Berlin">
     <meta property="og:description" content="only underground berlin sounds">
@@ -16,7 +16,7 @@
         n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
         t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
         document,'script','https://connect.facebook.net/en_US/fbevents.js');
-        // Event-IDs im SubmitHub-Format (17 alphanumerische Zeichen) — Dedup-Schlüssel für die Conversions API
+        // Event-IDs im SubmitHub-Format (17 alphanumerische Zeichen) — Dedup-Schluessel fuer die Conversions API
         function evid() {
             var c = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789', s = '';
             for (var i = 0; i < 17; i++) s += c.charAt(Math.floor(Math.random() * c.length));
@@ -29,6 +29,16 @@
             var payload = {event_name: name, event_id: id, event_source_url: location.href,
                            fbp: m ? m[1] : null, fbc: fbc ? fbc[1] : null, extra: extra || null};
             navigator.sendBeacon(CAPI, new Blob([JSON.stringify(payload)], {type: 'application/json'}));
+        }
+        // Eigene Zaehlung: feuert und vergisst, blockiert nie einen Klick.
+        var STATS = 'https://script.google.com/macros/s/AKfycbwY8N1v8O_fxnK5_En_FlNklsynvnTjid59Gkeae_lEhmu7HjkrlEkyWfivlMkjU6ACKw/exec?s=gbr-stats-2026';
+        function hit(ereignis, ziel) {
+            try {
+                var b = new Blob([JSON.stringify({p: location.pathname, e: ereignis,
+                                                   t: ziel || '', r: document.referrer || ''})],
+                                 {type: 'text/plain'});
+                navigator.sendBeacon(STATS, b);
+            } catch (err) {}
         }
         fbq('set', 'autoConfig', false, '1337510651776548');
         fbq('optOut', '1337510651776548', 'ESTRuleEngine');
@@ -49,18 +59,48 @@
         <div class="listen-buttons">
             <a class="listen-btn" id="play" href="https://open.spotify.com/playlist/1owAFr1EJkehkSdwPWNy9g">Play on Spotify</a>
         </div>
+
+        <div class="signup">
+            <div class="signup-text">berlin music scene &amp; geisburg records updates</div>
+            <form class="signup-form" id="signup" method="POST" action="https://2d2c1ee0.sibforms.com/serve/MUIFAAVShR3NksYj3r4S9MOfz747nhPaUbJGaeb8vP0SAGFQyyL8hEa6YpU1KGS09mJ7y-JhU2f_5on7MnpwcFvPuadARSlAyeoODaZYhYD-iwlXmSUaJPcI-hmbZk5C3guYGK3tRledHFynw2hS2ATEdy4XGGstMP-zjzsBsRgN6NC6h37313wCcPSzcQuW53hQT4c-jeDa34I2"
+                  target="signup-sink" autocomplete="on">
+                <input class="signup-input" type="email" id="EMAIL" name="EMAIL"
+                       placeholder="your email" required>
+                <button class="signup-btn" type="submit">Join</button>
+                <input type="text" name="email_address_check" value="" tabindex="-1"
+                       aria-hidden="true" style="position:absolute;left:-9999px">
+                <input type="hidden" name="locale" value="en">
+            </form>
+            <div class="signup-note" id="signup-note">no spam, unsubscribe anytime</div>
+        </div>
     </main>
+    <iframe name="signup-sink" style="display:none" title="signup"></iframe>
     <div class="impressum">
         <a href="index.html"><img class="listen-footer-logo" src="assets/logo-upscaled-hochgeschoben.png" alt="Geisburg Records"></a>
     </div>
     <script>
+        hit('pageview', '');
+
+        // ViewContent gilt AUSSCHLIESSLICH dem Spotify-Playlist-Link (Christian 06.08.).
         document.getElementById('play').addEventListener('click', function () {
             var k = evid();
             fbq('track', 'ViewContent', {content_name: 'fresh-finds-berlin-1', content_type: this.getAttribute('href')}, {eventID: k});
             beacon('ViewContent', k, {content_name: 'fresh-finds-berlin-1', content_type: this.getAttribute('href')});
+            hit('click', 'spotify');
+        });
+
+        // Newsletter: eigenes Event 'Lead', damit die Playlist-Conversion sauber bleibt.
+        document.getElementById('signup').addEventListener('submit', function () {
+            var k = evid();
+            fbq('track', 'Lead', {content_name: 'newsletter-freshfinds'}, {eventID: k});
+            beacon('Lead', k, {content_name: 'newsletter-freshfinds'});
+            hit('click', 'newsletter');
+            var note = document.getElementById('signup-note');
+            note.textContent = 'check your inbox to confirm';
+            note.classList.add('signup-note--ok');
+            document.getElementById('EMAIL').value = '';
         });
     </script>
-    <script data-goatcounter="https://geisburgrecords.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
 </body>
 
 </html>
