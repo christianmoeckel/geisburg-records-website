@@ -107,7 +107,7 @@ def main():
 <body>
     <header>
         <div class="logo-container">
-            <img src="assets/logo-upscaled-hochgeschoben.png" alt="Logo">
+            <a href="index.html"><img src="assets/logo-upscaled-hochgeschoben.png" alt="Geisburg Records"></a>
         </div>
         <nav>
             <a href="index.html">Releases</a>

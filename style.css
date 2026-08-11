@@ -323,3 +323,23 @@ nav a:hover {
 .signup-note--ok {
     color: black;
 }
+
+/* Follow-Zeile auf den Release-Seiten: bewusst klein und textlich, damit sie die
+   Streaming-Buttons nicht konkurrenziert. */
+.follow {
+    margin-top: 22px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 13px;
+    color: #888;
+}
+
+.follow a {
+    color: #333;
+    text-decoration: none;
+    border-bottom: 1px solid #bbb;
+}
+
+.follow a:hover {
+    color: black;
+    border-bottom-color: black;
+}

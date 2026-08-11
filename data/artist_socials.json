@@ -1,0 +1,28 @@
+{
+  "_hinweis": [
+    "Social-Handles pro Artist, benutzt von tools/generate_listen_pages.py fuer die",
+    "Follow-Zeile unter den Streaming-Buttons. Schluessel ist der Artist-Name exakt so,",
+    "wie er in releases.json steht (Vergleich ist unabhaengig von Gross-/Kleinschreibung).",
+    "",
+    "Herkunft der Eintraege: Erwaehnungen in den eigenen Instagram-Captions (aus dem",
+    "Scrape in geisburg-pipeline/build/ig_captions.json), das Kontaktsheet artists_contacts",
+    "und interne Artist-Dokumente. Nur uebernommen, wo die Zuordnung eindeutig ist.",
+    "",
+    "Fehlt ein Artist hier, erscheint auf seiner Seite einfach keine Follow-Zeile.",
+    "Ergaenzen: Eintrag hinzufuegen, dann 'python3 tools/generate_listen_pages.py'.",
+    "Perspektivisch soll das aus artistwerk (Spalte 'Social Handles') gespeist werden,",
+    "damit es nur eine Wahrheit gibt; solange die Spalte leer ist, ist diese Datei die Quelle."
+  ],
+
+  "syn":              { "instagram": "syn.music07",          "tiktok": "syn.music07" },
+  "Loulia":           { "instagram": "loulia_officiel" },
+  "Mona Rowey":       { "instagram": "monarowey" },
+  "Kresse 3":         { "instagram": "kresse_3" },
+  "Hosenadler":       { "instagram": "hosenadler" },
+  "Räubertochter":    { "instagram": "raeubertochter.musik" },
+  "G-Rex Delight":    { "instagram": "grexdelight" },
+  "pensif":           { "instagram": "_pensif" },
+  "emi x":            { "instagram": "emimitx" },
+  "HOTEL BERLIN":     { "instagram": "hotelberlin030" },
+  "Hotel Berlin and various artists": { "instagram": "hotelberlin030" }
+}

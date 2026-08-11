@@ -5,10 +5,22 @@ eigene Seiten statt song.link/iMusician: volle Kontrolle, Bandcamp+SoundCloud dr
 
 Quellen: data/releases.json — Felder bandcamp_url, spotify, applemusic, soundcloud, deezer, youtube.
 Fehlende Dienste erscheinen einfach nicht; manuell fixbar in der JSON (bald: trackwerk).
+
+Seit 11.08. zusaetzlich data/artist_socials.json: darunter eine kleine Follow-Zeile mit
+Instagram und, wo vorhanden, TikTok des Artists. Bewusst als Textlinks unter den
+Streaming-Buttons und nicht als weiterer grosser Button: die Seite hat eine Aufgabe,
+naemlich zur Musik zu fuehren, und jeder gleichrangige Knopf daneben kostet davon Klicks.
+Aus demselben Grund steht dort KEIN Label-Instagram (Christians Frage vom 11.08.):
+das Geisburg-Logo im Fuss verlinkt bereits aufs Label, ein zweiter Label-Link wuerde nur
+mit dem Artist-Link konkurrieren, dem die Aufmerksamkeit hier gehoert.
+Bei Mehrfach-Artists ("A & B", "A feat. B") bekommt jeder genannte Artist mit Handle
+seinen eigenen Link.
+
 Aufruf: python3 tools/generate_listen_pages.py  (danach generate_index.py + push)
 """
 import html
 import json
+import re
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -29,8 +41,49 @@ SERVICES = [
 ]
 
 
+def socials_fuer(name: str, tabelle: dict):
+    """Handles aller im Artist-Feld genannten Acts, in der genannten Reihenfolge.
+    'Shlomes feat. DJ Krille' liefert also beide, sofern beide hinterlegt sind."""
+    treffer, gesehen = [], set()
+    teile = [name] + re.split(r",|\s+&\s+|\s+feat\.?\s+|\s+x\s+|\s+and\s+", name)
+    for teil in teile:
+        teil = teil.strip()
+        if not teil:
+            continue
+        for schluessel, eintrag in tabelle.items():
+            if schluessel.startswith("_") or schluessel.lower() != teil.lower():
+                continue
+            if schluessel.lower() in gesehen:
+                continue
+            gesehen.add(schluessel.lower())
+            treffer.append((teil, eintrag))
+    return treffer
+
+
+def folgen_zeile(name: str, tabelle: dict) -> str:
+    eintraege = socials_fuer(name, tabelle)
+    if not eintraege:
+        return ""
+    stuecke = []
+    for act, e in eintraege:
+        links = []
+        if e.get("instagram"):
+            links.append(f'<a href="https://instagram.com/{html.escape(e["instagram"])}">Instagram</a>')
+        if e.get("tiktok"):
+            links.append(f'<a href="https://tiktok.com/@{html.escape(e["tiktok"])}">TikTok</a>')
+        if not links:
+            continue
+        vorsatz = f"{html.escape(act)} " if len(eintraege) > 1 else ""
+        stuecke.append(vorsatz + " · ".join(links))
+    if not stuecke:
+        return ""
+    return ('\n        <div class="follow">follow '
+            + " &nbsp;|&nbsp; ".join(stuecke) + "</div>")
+
+
 def main():
     d = json.loads((ROOT / "data" / "releases.json").read_text())
+    socials = json.loads((ROOT / "data" / "artist_socials.json").read_text())
     out_dir = ROOT / "listen"
     out_dir.mkdir(exist_ok=True)
     n_pages = 0
@@ -45,6 +98,7 @@ def main():
                 buttons = f'            <a class="listen-btn" href="{html.escape(r["presave"])}">Pre-Save</a>'
             else:
                 buttons = '            <p class="listen-note">coming soon</p>'
+        folgen = folgen_zeile(r["artist"], socials)
         page = f"""<!DOCTYPE html>
 <html lang="en">
 
@@ -62,7 +116,7 @@ def main():
         <img class="listen-cover" src="../{html.escape(r['cover'])}" alt="Cover">
         <div class="listen-buttons">
 {buttons}
-        </div>
+        </div>{folgen}
     </main>
     <div class="impressum">
         <a href="../index.html"><img class="listen-footer-logo" src="../assets/logo-upscaled-hochgeschoben.png" alt="Geisburg Records"></a>
