@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css?v=736b0bd6">
+    <link rel="stylesheet" href="style.css?v=78c220fe">
     <title>FRESH FINDS ~ Berlin | GEISBURG RECORDS</title>
     <meta property="og:title" content="FRESH FINDS ~ Berlin">
     <meta property="og:description" content="only underground berlin sounds">
@@ -60,21 +60,7 @@
             <a class="listen-btn" id="play" href="https://open.spotify.com/playlist/1owAFr1EJkehkSdwPWNy9g">Play on Spotify</a>
         </div>
 
-        <div class="signup">
-            <div class="signup-text">berlin music scene &amp; geisburg records updates</div>
-            <form class="signup-form" id="signup" method="POST" action="https://2d2c1ee0.sibforms.com/serve/MUIFAAVShR3NksYj3r4S9MOfz747nhPaUbJGaeb8vP0SAGFQyyL8hEa6YpU1KGS09mJ7y-JhU2f_5on7MnpwcFvPuadARSlAyeoODaZYhYD-iwlXmSUaJPcI-hmbZk5C3guYGK3tRledHFynw2hS2ATEdy4XGGstMP-zjzsBsRgN6NC6h37313wCcPSzcQuW53hQT4c-jeDa34I2"
-                  target="signup-sink" autocomplete="on">
-                <input class="signup-input" type="email" id="EMAIL" name="EMAIL"
-                       placeholder="your email" required>
-                <button class="signup-btn" type="submit">Join</button>
-                <input type="text" name="email_address_check" value="" tabindex="-1"
-                       aria-hidden="true" style="position:absolute;left:-9999px">
-                <input type="hidden" name="locale" value="en">
-            </form>
-            <div class="signup-note" id="signup-note">no spam, unsubscribe anytime</div>
-        </div>
     </main>
-    <iframe name="signup-sink" style="display:none" title="signup"></iframe>
     <div class="impressum">
         <a href="index.html"><img class="listen-footer-logo" src="assets/logo-upscaled-hochgeschoben.png" alt="Geisburg Records"></a>
     </div>
@@ -89,17 +75,6 @@
             hit('click', 'spotify');
         });
 
-        // Newsletter: eigenes Event 'Lead', damit die Playlist-Conversion sauber bleibt.
-        document.getElementById('signup').addEventListener('submit', function () {
-            var k = evid();
-            fbq('track', 'Lead', {content_name: 'newsletter-freshfinds'}, {eventID: k});
-            beacon('Lead', k, {content_name: 'newsletter-freshfinds'});
-            hit('click', 'newsletter');
-            var note = document.getElementById('signup-note');
-            note.textContent = 'check your inbox to confirm';
-            note.classList.add('signup-note--ok');
-            document.getElementById('EMAIL').value = '';
-        });
     </script>
 </body>
 

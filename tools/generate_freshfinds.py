@@ -5,20 +5,19 @@ optOut ESTRuleEngine, eventID auf PageView UND ViewContent — die eventID ist d
 Dedup-Schluessel zur Conversions API). Meta-Ads laufen auf die Seite; bestehende Custom
 Audiences matchen weiter (gleiche Pixel-ID + gleicher content_name 'fresh-finds-berlin-1').
 
-v3, drei Aenderungen (Christian 06.08.):
-1. NEWSLETTER-FELD, nativ im Seitenstil. Bewusst NICHT das Brevo-Widget: dessen JS laedt
-   eigenes CSS und Roboto-Webfonts nach, dadurch flackert die Seite beim Laden und sieht
-   fremd aus ("sketchy"). Hier steht ein normales Formular im Stil der Seite, das per
-   verstecktem iframe an dieselbe Brevo-Liste postet wie newsletter.html. Kein fremdes JS,
-   kein fremdes CSS, kein Flackern, kein Verlassen der Seite.
-2. EIGENE TRAFFIC-ZAEHLUNG. Das seit 03.08. eingebundene GoatCounter-Snippet zeigte auf
+v4 (Christian 11.08.): das Newsletter-Feld ist wieder RAUS, die Seite ist wie vorher eine
+reine Weiterleitung zur Playlist. Grund ist die Aufgabe der Seite: sie bekommt bezahlten
+Meta-Traffic und soll genau eine Handlung ausloesen, den Klick auf Spotify. Ein zweites
+Angebot daneben teilt die Aufmerksamkeit und verschlechtert die Conversion, an der die Ads
+optimiert werden. Der Aufbau des Feldes steht in der Git-Historie, falls es zurueckkommt.
+
+Weiterhin drin, seit v3:
+1. EIGENE TRAFFIC-ZAEHLUNG. Das seit 03.08. eingebundene GoatCounter-Snippet zeigte auf
    einen Account, den es nicht gibt (geprueft: "error 400: no site at this domain"), es
    wurde also nie etwas gezaehlt. Ersetzt durch einen eigenen Zaehler ins webstats-Sheet
    (geisburg-pipeline/apps_script/webstats.gs), der Seitenaufrufe UND Klicks je Ziel
    erfasst. Kein Cookie, keine IP, nur Pfad/Ereignis/Ziel/Herkunftsdomain.
-3. ViewContent feuert weiterhin ausschliesslich auf dem Spotify-Playlist-Link, nirgends
-   sonst. Der Newsletter-Abschluss meldet 'Lead' (eigenes Event), damit die Conversion
-   nicht mit dem Playlist-Klick vermischt wird.
+2. ViewContent feuert ausschliesslich auf dem Spotify-Playlist-Link, nirgends sonst.
 
 Conversions API: SubmitHub schickt Klicks zusaetzlich server-seitig (eigener /api-Beacon).
 GitHub Pages hat keinen Server, unser Beacon ist vorbereitet aber AUS, bis der Relay auf
@@ -40,10 +39,6 @@ COVER = "assets/freshfinds_cover.jpg"
 SUBTITLE = "only underground berlin sounds"
 CAPI_ENDPOINT = ""                     # leer = Server-Beacon aus; HQ-Relay-URL eintragen sobald deployed
 
-# Brevo: dieselbe Liste wie newsletter.html, aber ohne deren JS/CSS.
-BREVO_ACTION = ("https://2d2c1ee0.sibforms.com/serve/MUIFAAVShR3NksYj3r4S9MOfz747nhPaUbJGaeb8vP0S"
-                "AGFQyyL8hEa6YpU1KGS09mJ7y-JhU2f_5on7MnpwcFvPuadARSlAyeoODaZYhYD-iwlXmSUaJPcI-hmb"
-                "Zk5C3guYGK3tRledHFynw2hS2ATEdy4XGGstMP-zjzsBsRgN6NC6h37313wCcPSzcQuW53hQT4c-jeDa34I2")
 
 # Eigener Zaehler. Token ist oeffentlich (steht im Quelltext) und berechtigt nur zum
 # Anhaengen einer Statistikzeile, siehe Kommentar in webstats.gs.
@@ -115,21 +110,7 @@ def page(prefix: str) -> str:
             <a class="listen-btn" id="play" href="{PLAYLIST_URL}">Play on Spotify</a>
         </div>
 
-        <div class="signup">
-            <div class="signup-text">berlin music scene &amp; geisburg records updates</div>
-            <form class="signup-form" id="signup" method="POST" action="{BREVO_ACTION}"
-                  target="signup-sink" autocomplete="on">
-                <input class="signup-input" type="email" id="EMAIL" name="EMAIL"
-                       placeholder="your email" required>
-                <button class="signup-btn" type="submit">Join</button>
-                <input type="text" name="email_address_check" value="" tabindex="-1"
-                       aria-hidden="true" style="position:absolute;left:-9999px">
-                <input type="hidden" name="locale" value="en">
-            </form>
-            <div class="signup-note" id="signup-note">no spam, unsubscribe anytime</div>
-        </div>
     </main>
-    <iframe name="signup-sink" style="display:none" title="signup"></iframe>
     <div class="impressum">
         <a href="{prefix}index.html"><img class="listen-footer-logo" src="{prefix}assets/logo-upscaled-hochgeschoben.png" alt="Geisburg Records"></a>
     </div>
@@ -144,17 +125,6 @@ def page(prefix: str) -> str:
             hit('click', 'spotify');
         }});
 
-        // Newsletter: eigenes Event 'Lead', damit die Playlist-Conversion sauber bleibt.
-        document.getElementById('signup').addEventListener('submit', function () {{
-            var k = evid();
-            fbq('track', 'Lead', {{content_name: 'newsletter-freshfinds'}}, {{eventID: k}});
-            beacon('Lead', k, {{content_name: 'newsletter-freshfinds'}});
-            hit('click', 'newsletter');
-            var note = document.getElementById('signup-note');
-            note.textContent = 'check your inbox to confirm';
-            note.classList.add('signup-note--ok');
-            document.getElementById('EMAIL').value = '';
-        }});
     </script>
 </body>
 
@@ -167,7 +137,7 @@ def main():
     sub = ROOT / "freshfinds"
     sub.mkdir(exist_ok=True)
     (sub / "index.html").write_text(page("../"))
-    print("freshfinds.html + freshfinds/index.html geschrieben (v3)")
+    print("freshfinds.html + freshfinds/index.html geschrieben (v4)")
 
 
 if __name__ == "__main__":
