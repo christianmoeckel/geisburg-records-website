@@ -77,7 +77,7 @@ def main():
         else:
             links.append(("listen", f"listen/{r['slug']}.html"))
         if r.get("musicvideo"):
-            links.append(("Music Video", r["musicvideo"]))
+            links.append(("Full Length Music Video", r["musicvideo"]))
         for l in r.get("links", []):
             if l["label"] == "listen":
                 continue  # eigene Landing ersetzt alte Direkt-Smartlinks

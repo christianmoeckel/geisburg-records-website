@@ -29,6 +29,13 @@ CSSV = _h.md5((ROOT / "style.css").read_bytes()).hexdigest()[:8]
 
 # Christians Reihenfolge (30.07. nachts): Spotify, Apple Music, Bandcamp, SoundCloud — dann Rest
 # (31.07.: + YouTube/Deezer/Amazon unten; Musikvideo als hervorgehobener Extra-Button oben)
+# 11.08.: Der Button heisst bewusst "Full Length Music Video" und nicht nur "Music Video".
+# Anlass war, dass zwoelf Releases faelschlich einen MV-Button trugen, hinter dem in
+# Wahrheit der automatisch erzeugte YouTube-Art-Track lag. Der ausgeschriebene Name macht
+# die Kategorie eindeutig: hier gehoert nur ein Video in voller Songlaenge hinein, keine
+# Teaser, keine Reels, keine Art-Tracks. Kriterien und Pruefweg stehen in
+# geisburg-pipeline/docs/website_backlog.md. Im trackwerk heisst die Spalte entsprechend
+# Link_Full_Length_MV.
 # Monochrome Inline-SVGs (currentColor), damit die Icons die Textfarbe erben und
 # ohne zusaetzliche Requests auskommen. Pfade sind die offiziellen Markenumrisse,
 # einfarbig wiedergegeben (Christian 11.08.: "Icons in monochrom").
@@ -53,7 +60,7 @@ SERVICES = [
     ("youtube", "YouTube"),
     ("deezer", "Deezer"),
     ("amazonmusic", "Amazon Music"),
-    ("musicvideo", "Music Video"),
+    ("musicvideo", "Full Length Music Video"),
 ]
 
 
