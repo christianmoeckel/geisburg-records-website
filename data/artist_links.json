@@ -1,0 +1,42 @@
+{
+  "_kommentar": [
+    "Artist-eigene Link-in-Bio-Seiten, erzeugt von tools/generate_artist_links.py.",
+    "Gegenstueck zu links.json, das die Seite des LABELS speist.",
+    "",
+    "Reihenfolge der Eintraege unter 'links' ist die Reihenfolge auf der Seite.",
+    "Ganz oben steht immer die Release-Karte aus 'release' (Cover plus Titel), darunter",
+    "die Buttons. 'icon' referenziert die Icons aus tools/generate_listen_pages.py.",
+    "",
+    "Der Release-Link zeigt IMMER auf die eigene Listen-Page, nie direkt auf Spotify oder",
+    "einen Pre-Save: die Listen-Page zeigt vor Erscheinen den Pre-Save und danach alle",
+    "Streaming-Buttons. So bleibt der Link gueltig, ohne dass jemand ihn nachzieht.",
+    "",
+    "Neuen Artist ergaenzen: Eintrag hinzufuegen, dann",
+    "'python3 tools/generate_artist_links.py'."
+  ],
+  "artists": [
+    {
+      "artist": "bland & pale",
+      "slug": "bland-and-pale",
+      "subtitle": "tall anxious berlin psych rock",
+      "release": "you-keep-calling-my-name",
+      "links": [
+        {
+          "label": "heaven ~ Full Length Music Video",
+          "url": "https://www.youtube.com/watch?v=eFsKn-BEwms",
+          "icon": "musicvideo"
+        },
+        {
+          "label": "TikTok",
+          "url": "https://www.tiktok.com/@blandandpale",
+          "icon": "tiktok"
+        },
+        {
+          "label": "Instagram",
+          "url": "https://www.instagram.com/blandandpale/",
+          "icon": "instagram"
+        }
+      ]
+    }
+  ]
+}
