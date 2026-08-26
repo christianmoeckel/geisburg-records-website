@@ -13,16 +13,42 @@
     "Perspektivisch soll das aus artistwerk (Spalte 'Social Handles') gespeist werden,",
     "damit es nur eine Wahrheit gibt; solange die Spalte leer ist, ist diese Datei die Quelle."
   ],
-
-  "syn":              { "instagram": "syn.music07",          "tiktok": "syn.music07" },
-  "Loulia":           { "instagram": "loulia_officiel" },
-  "Mona Rowey":       { "instagram": "monarowey" },
-  "Kresse 3":         { "instagram": "kresse_3" },
-  "Hosenadler":       { "instagram": "hosenadler" },
-  "Räubertochter":    { "instagram": "raeubertochter.musik" },
-  "G-Rex Delight":    { "instagram": "grexdelight" },
-  "pensif":           { "instagram": "_pensif" },
-  "emi x":            { "instagram": "emimitx" },
-  "HOTEL BERLIN":     { "instagram": "hotelberlin030" },
-  "Hotel Berlin and various artists": { "instagram": "hotelberlin030" }
+  "syn": {
+    "instagram": "syn.music07",
+    "tiktok": "syn.music07"
+  },
+  "Loulia": {
+    "instagram": "loulia_officiel"
+  },
+  "Mona Rowey": {
+    "instagram": "monarowey"
+  },
+  "Kresse 3": {
+    "instagram": "kresse_3"
+  },
+  "Hosenadler": {
+    "instagram": "hosenadler"
+  },
+  "Räubertochter": {
+    "instagram": "raeubertochter.musik"
+  },
+  "G-Rex Delight": {
+    "instagram": "grexdelight"
+  },
+  "pensif": {
+    "instagram": "_pensif"
+  },
+  "emi x": {
+    "instagram": "emimitx"
+  },
+  "HOTEL BERLIN": {
+    "instagram": "hotelberlin030"
+  },
+  "Hotel Berlin and various artists": {
+    "instagram": "hotelberlin030"
+  },
+  "bland & pale": {
+    "instagram": "blandandpale",
+    "tiktok": "blandandpale"
+  }
 }
