@@ -11,7 +11,10 @@
       "spotify": "https://open.spotify.com/track/237Ua0e5P8AWOrC7topjXU",
       "applemusic": "https://music.apple.com/de/album/you-keep-calling-my-name/6797554424?i=6797554727",
       "deezer": "https://www.deezer.com/track/4191505062",
-      "youtube": "https://www.youtube.com/watch?v=9UKWLAC0PXg"
+      "youtube": "https://www.youtube.com/watch?v=9UKWLAC0PXg",
+      "soundcloud": "https://soundcloud.com/geisburgrecords/you-keep-calling-my-name",
+      "bandcamp": true,
+      "bandcamp_url": "https://geisburgrecords.bandcamp.com/track/you-keep-calling-my-name"
     },
     {
       "title": "mind's eye",
