@@ -5,7 +5,12 @@ Gegenstueck zu generate_links_page.py, das dasselbe fuer das Label tut. Quelle i
 data/artist_links.json; die Reihenfolge der Eintraege dort ist die Reihenfolge auf der
 Seite, weil bei einer Bio-Seite die oberste Zeile den Grossteil der Klicks bekommt.
 
-Zwei Entscheidungen, die hier bewusst so getroffen sind:
+Aufbau (Christian 27.08.): oben NUR der Artist-Name, darunter der Release und die Links,
+das Geisburg-Logo klein als Fussnote unten. Kein Untertitel unter dem Namen und kein Label-
+Logo im Kopf: die Seite gehoert dem Artist, das Label steht darunter. Der Untertitel bleibt
+in den og-Metadaten, damit die Vorschau beim Teilen etwas hergibt.
+
+Zwei weitere Entscheidungen, die hier bewusst so getroffen sind:
 
 1. Der Release oben verlinkt IMMER auf die eigene Listen-Page, nie direkt auf Spotify und
    nie auf den Pre-Save. Vor Erscheinen zeigt die Listen-Page den Pre-Save, danach alle
@@ -74,9 +79,7 @@ def seite(a: dict, rel: dict, prefix: str) -> str:
 
 <body>
     <main class="listen-page">
-        <a href="{prefix}index.html"><img class="bio-logo" src="{prefix}assets/logo-upscaled-hochgeschoben.png" alt="Geisburg Records"></a>
         <div class="listen-title">{html.escape(a["artist"])}</div>
-        <div class="listen-artist">{html.escape(a.get("subtitle") or "")}</div>
         <a class="bio-release" href="{prefix}listen/{rel["slug"]}.html">
             <img src="{prefix}{html.escape(rel["cover"])}" alt="Cover {html.escape(rel["title"])}">
             <div>
@@ -89,6 +92,9 @@ def seite(a: dict, rel: dict, prefix: str) -> str:
 {knoepfe}
         </div>
     </main>
+    <div class="impressum">
+        <a href="{prefix}index.html"><img class="listen-footer-logo" src="{prefix}assets/logo-upscaled-hochgeschoben.png" alt="Geisburg Records"></a>
+    </div>
 </body>
 
 </html>
