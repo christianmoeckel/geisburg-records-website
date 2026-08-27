@@ -372,12 +372,6 @@
       "title": "sold on the street",
       "artist": "teuer",
       "cover": "assets/cover_sold_on_the_street-min.jpg",
-      "links": [
-        {
-          "label": "listen",
-          "url": "https://music.imusician.pro/a/PAdGxVKs/"
-        }
-      ],
       "songlink": "https://song.link/de/i/1795430324",
       "applemusic": "https://geo.music.apple.com/de/album/_/1795430320?i=1795430324&mt=1&app=music&ls=1&at=1000lHKX&ct=api_http&itscg=30200&itsct=odsl_m",
       "slug": "sold-on-the-street",
@@ -392,12 +386,6 @@
       "title": "Anything That You'd Like",
       "artist": "Mona Rowey",
       "cover": "assets/Anything_Youd_Like_Cover_1710_Original.jpg",
-      "links": [
-        {
-          "label": "listen",
-          "url": "https://music.imusician.pro/a/uWLRNOoz/"
-        }
-      ],
       "songlink": "https://song.link/de/i/1786322999",
       "applemusic": "https://geo.music.apple.com/de/album/_/1786322989?i=1786322999&mt=1&app=music&ls=1&at=1000lHKX&ct=api_http&itscg=30200&itsct=odsl_m",
       "slug": "anything-that-you-d-like",
