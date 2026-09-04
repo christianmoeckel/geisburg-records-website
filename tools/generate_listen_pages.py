@@ -106,6 +106,10 @@ def folgen_zeile(name: str, tabelle: dict) -> str:
             + '<span class="follow-sep"></span>'.join(stuecke) + "</div>")
 
 
+DIENSTNAMEN = {"spotify": "Spotify", "deezer": "Deezer", "applemusic": "Apple Music",
+               "amazonmusic": "Amazon Music", "youtube": "YouTube", "soundcloud": "SoundCloud"}
+
+
 def main():
     d = json.loads((ROOT / "data" / "releases.json").read_text())
     socials = json.loads((ROOT / "data" / "artist_socials.json").read_text())
@@ -121,7 +125,30 @@ def main():
         )
         if not buttons:
             if r.get("presave"):
-                buttons = f'            <a class="listen-btn" href="{html.escape(r["presave"])}">Pre-Save</a>'
+                # WARUM HIER NICHT DER DIREKTE SPOTIFY-LINK STEHT (04.09.2026 nachgesehen):
+                # Auf der iMusician-Seite sind die Pre-Save-Knoepfe simple <a>-Tags auf
+                # accounts.spotify.com/authorize bzw. connect.deezer.com. Die URLs tragen KEINEN
+                # state-Parameter und keine Release-Kennung. Den Bezug stellt ein onMouseDown her,
+                # der vor dem Oeffnen
+                #   localStorage.setItem("release_json", {barcode, releasePageId, title, ...})
+                # auf der Domain music.imusician.pro schreibt; die Rueckleitseite /presave/spotify/
+                # liest das wieder aus. Von geisburgrecords.com aus laesst sich dieser Eintrag
+                # nicht setzen, fremder localStorage ist gesperrt. Ein kopierter Link fuehrt den
+                # Besucher also durch den Spotify-Login und verliert danach das Release — ohne
+                # Fehlermeldung, der Pre-Save waere einfach weg. Einen Deep-Link, der auf der
+                # iMusician-Seite direkt weiterspringt, gibt es nicht (im Seiten-Chunk wird kein
+                # Query-Parameter ausgewertet).
+                # Deshalb: pro Dienst ein eigener Knopf, die Auswahl passiert hier, der Klick
+                # drueben. Ein echter eigener Pre-Save braucht eine eigene Spotify-App und einen
+                # Dienst, der die Tokens haelt und am Release-Tag speichert.
+                dienste = r.get("presave_services") or []
+                if dienste:
+                    buttons = "\n".join(
+                        f'            <a class="listen-btn" href="{html.escape(r["presave"])}">'
+                        f'<span class="ic">{ICONS.get(d, "")}</span>Pre-Save on {DIENSTNAMEN.get(d, d.title())}</a>'
+                        for d in dienste)
+                else:
+                    buttons = f'            <a class="listen-btn" href="{html.escape(r["presave"])}">Pre-Save</a>'
                 if r.get("note"):
                     buttons += (f'\n            <p class="listen-note">'
                                 f'<span class="listen-note-date">{html.escape(r["note"])}</span></p>')

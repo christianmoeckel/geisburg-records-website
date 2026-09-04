@@ -9,7 +9,11 @@
       "isrc": "CH6542747071",
       "note": "out 24.09.2026",
       "presave": "https://music.imusician.pro/a/lNAb5Hwy/",
-      "upc": "4071624147552"
+      "upc": "4071624147552",
+      "presave_services": [
+        "spotify",
+        "deezer"
+      ]
     },
     {
       "title": "you keep calling my name",
