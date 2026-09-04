@@ -2,6 +2,14 @@
   "_doku": "Quelle des Release-Grids auf index.html. Array-Reihenfolge = Anzeige-Reihenfolge (neueste oben). 'bandcamp': true => tools/generate_index.py sucht den Titel live auf geisburgrecords.bandcamp.com/music und setzt den Link, sobald published (vorher erscheint der Eintrag ohne Link). 'bandcamp_title' überschreibt den Match-Titel. 'links' = feste Zusatz-/Fallback-Links.",
   "releases": [
     {
+      "title": "HOPELESS, ROMANTIC",
+      "artist": "syn",
+      "cover": "assets/cover_hopeless_romantic-min.jpg",
+      "slug": "hopeless-romantic",
+      "isrc": "CH6542747071",
+      "note": "out 24.09.2026"
+    },
+    {
       "title": "you keep calling my name",
       "artist": "bland & pale",
       "cover": "assets/cover_you_keep_calling_my_name-min.jpg",

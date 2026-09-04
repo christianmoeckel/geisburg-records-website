@@ -72,8 +72,13 @@ def main():
         # Smartlink-Seite listen/<slug>.html (alle Dienste dort; tools/generate_listen_pages.py).
         # Release-Routine (01.08.): unreleased (note) + presave-URL -> "Pre-Save" zur iMusician-Page;
         # am Release-Tag note/presave entfernen -> normaler listen-Link.
+        # Ohne presave (04.09.: der Smartlink kommt oft erst Tage nach dem Auftrag) stand hier
+        # trotzdem „listen", und wer klickte, fand ein nacktes „coming soon". Die note ist die
+        # einzige Stelle, an der das Datum steht — also wird sie das Label, statt ungenutzt zu bleiben.
         if r.get("note") and r.get("presave"):
             links.append(("Pre-Save", r["presave"]))
+        elif r.get("note"):
+            links.append((r["note"], f"listen/{r['slug']}.html"))
         else:
             links.append(("listen", f"listen/{r['slug']}.html"))
         if r.get("musicvideo"):

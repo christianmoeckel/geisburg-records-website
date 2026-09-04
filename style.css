@@ -193,6 +193,12 @@ nav a:hover {
     color: #666;
 }
 
+.listen-note-date {
+    display: inline-block;
+    margin-top: 4px;
+    color: #000;
+}
+
 .bio-logo {
     max-width: 130px;
     margin-bottom: 4px;

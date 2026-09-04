@@ -123,7 +123,10 @@ def main():
             if r.get("presave"):
                 buttons = f'            <a class="listen-btn" href="{html.escape(r["presave"])}">Pre-Save</a>'
             else:
-                buttons = '            <p class="listen-note">coming soon</p>'
+                # Nacktes „coming soon" sagt niemandem, ob das morgen oder im Winter ist.
+                # Die note traegt das Datum, also kommt sie mit.
+                zusatz = f'<br><span class="listen-note-date">{html.escape(r["note"])}</span>' if r.get("note") else ""
+                buttons = f'            <p class="listen-note">coming soon{zusatz}</p>'
         folgen = folgen_zeile(r["artist"], socials)
         page = f"""<!DOCTYPE html>
 <html lang="en">
