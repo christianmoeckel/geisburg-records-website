@@ -122,6 +122,9 @@ def main():
         if not buttons:
             if r.get("presave"):
                 buttons = f'            <a class="listen-btn" href="{html.escape(r["presave"])}">Pre-Save</a>'
+                if r.get("note"):
+                    buttons += (f'\n            <p class="listen-note">'
+                                f'<span class="listen-note-date">{html.escape(r["note"])}</span></p>')
             else:
                 # Nacktes „coming soon" sagt niemandem, ob das morgen oder im Winter ist.
                 # Die note traegt das Datum, also kommt sie mit.

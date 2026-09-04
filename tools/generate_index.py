@@ -76,7 +76,9 @@ def main():
         # trotzdem „listen", und wer klickte, fand ein nacktes „coming soon". Die note ist die
         # einzige Stelle, an der das Datum steht — also wird sie das Label, statt ungenutzt zu bleiben.
         if r.get("note") and r.get("presave"):
-            links.append(("Pre-Save", r["presave"]))
+            # Das Datum nicht gegen den Pre-Save eintauschen: wer den Knopf sieht, will auch
+            # wissen, worauf er wartet. Beides in ein Label, damit die Karte eine Zeile bleibt.
+            links.append((f"Pre-Save · {r['note']}", r["presave"]))
         elif r.get("note"):
             links.append((r["note"], f"listen/{r['slug']}.html"))
         else:
