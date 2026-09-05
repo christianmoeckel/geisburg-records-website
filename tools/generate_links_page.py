@@ -3,6 +3,16 @@
 Top-Eintrag = neuester Release aus releases.json[0] (automatisch aktuell!),
 Rest aus data/links.json. Stil = listen-Pages (Smartlink-Optik).
 """
+
+# Bis 05.09.2026 trug jede generierte Link-Seite einen GoatCounter-Zaehler auf
+# geisburgrecords.goatcounter.com. Der Account existiert nicht mehr - der Endpunkt
+# antwortet 400 "no site at this domain". Gezaehlt wurde also laengst nichts; jeder
+# Seitenaufruf lud nur ein Fremdscript und schickte einen Request ins Leere. Die Zeile
+# ist deshalb raus. Wer wieder zaehlen will, legt das Konto neu an und fuegt im
+# <body> wieder ein:
+#   <script data-goatcounter="https://<konto>.goatcounter.com/count" async
+#           src="//gc.zgo.at/count.js"></script>
+
 import html, json
 from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
@@ -37,7 +47,6 @@ def main():
 </head>
 
 <body>
-    <script data-goatcounter="https://geisburgrecords.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
     <main class="listen-page">
         <a href="index.html"><img class="bio-logo" src="assets/logo-upscaled-hochgeschoben.png" alt="Geisburg Records"></a>
 {release_card}
