@@ -32,8 +32,8 @@ def main():
     # laeuft ueber localStorage auf music.imusician.pro; ein von hier nachgebauter
     # Spotify-Knopf sieht richtig aus und der Pre-Save geht still verloren (ausfuehrlich
     # in tools/generate_listen_pages.py).
-    def karte(r, tag, sub):
-        return f"""        <a class="bio-release" href="listen/{r['slug']}.html">
+    def karte(r, tag, sub, ziel=None):
+        return f"""        <a class="bio-release" href="{html.escape(ziel or f"listen/{r['slug']}.html")}">
             <img src="{html.escape(r['cover'])}" alt="Cover">
             <div>
                 <div class="bio-tag">{html.escape(tag)}</div>
@@ -47,7 +47,14 @@ def main():
         if r.get("presave") and r.get("note"):
             # note traegt das Datum als Freitext ("out 30.09.2026"), das ist die einzige
             # Stelle, an der es steht — also wird es das Untertitel-Label.
-            karten.append(karte(r, "PRE-SAVE", r["note"]))
+            #
+            # Die Karte fuehrt DIREKT auf die iMusician-Seite, nicht auf unsere
+            # listen-Seite (Christian 09.09.2026: "mach in den linktree nur einen link
+            # zum presave, der weiterleitet auf die imusician seite"). Die Zwischenseite
+            # trug bis dahin denselben einen Knopf und kostete nur einen Klick. Warum das
+            # Ziel iMusician sein MUSS und nicht Spotify direkt, steht in
+            # generate_listen_pages.py.
+            karten.append(karte(r, "PRE-SAVE", r["note"], ziel=r["presave"]))
     newest = next(r for r in rel if not r.get("note"))
     karten.append(karte(newest, "NEW RELEASE", "listen everywhere"))
     release_card = "\n".join(karten)

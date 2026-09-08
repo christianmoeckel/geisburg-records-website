@@ -125,36 +125,30 @@ def main():
         )
         if not buttons:
             if r.get("presave"):
-                # WARUM HIER NICHT DER DIREKTE SPOTIFY-LINK STEHT (04.09.2026 nachgesehen):
-                # Auf der iMusician-Seite sind die Pre-Save-Knoepfe simple <a>-Tags auf
-                # accounts.spotify.com/authorize bzw. connect.deezer.com. Die URLs tragen KEINEN
-                # state-Parameter und keine Release-Kennung. Den Bezug stellt ein onMouseDown her,
-                # der vor dem Oeffnen
+                # EIN Knopf, Ziel ist die iMusician-Release-Page. Nicht pro Dienst einer,
+                # und schon gar nicht die OAuth-URLs von dort kopiert.
+                #
+                # WARUM (04.09.2026 gemessen, 08.09. am lebenden Objekt bestaetigt): Auf
+                # der iMusician-Seite sind die Pre-Save-Knoepfe simple <a>-Tags auf
+                # accounts.spotify.com/authorize bzw. connect.deezer.com. Die URLs tragen
+                # KEINEN state-Parameter und keine Release-Kennung — sie sind fuer jedes
+                # Release identisch. Den Bezug stellt ein onMouseDown her, der vor dem
+                # Oeffnen
                 #   localStorage.setItem("release_json", {barcode, releasePageId, title, ...})
-                # auf der Domain music.imusician.pro schreibt; die Rueckleitseite /presave/spotify/
-                # liest das wieder aus. Von geisburgrecords.com aus laesst sich dieser Eintrag
-                # nicht setzen, fremder localStorage ist gesperrt. Ein kopierter Link fuehrt den
-                # Besucher also durch den Spotify-Login und verliert danach das Release — ohne
-                # Fehlermeldung, der Pre-Save waere einfach weg. Einen Deep-Link, der auf der
-                # iMusician-Seite direkt weiterspringt, gibt es nicht (im Seiten-Chunk wird kein
-                # Query-Parameter ausgewertet).
-                # Deshalb: pro Dienst ein eigener Knopf, die Auswahl passiert hier, der Klick
-                # drueben. Ein echter eigener Pre-Save braucht eine eigene Spotify-App und einen
-                # Dienst, der die Tokens haelt und am Release-Tag speichert.
-                dienste = r.get("presave_services") or []
-                # presave_links traegt die ECHTEN OAuth-Ziele, so wie sie auf der
-                # iMusician-Seite stehen (scripts/51_presave_links.py holt sie). Damit
-                # springt der Besucher direkt in den Spotify- bzw. Deezer-Login, statt
-                # erst auf die Zwischenseite. Fehlt der Eintrag, bleibt es beim alten
-                # Weg ueber die Release-Page.
-                ziele = r.get("presave_links") or {}
-                if dienste:
-                    buttons = "\n".join(
-                        f'            <a class="listen-btn" href="{html.escape(ziele.get(d) or r["presave"])}">'
-                        f'<span class="ic">{ICONS.get(d, "")}</span>Pre-Save on {DIENSTNAMEN.get(d, d.title())}</a>'
-                        for d in dienste)
-                else:
-                    buttons = f'            <a class="listen-btn" href="{html.escape(r["presave"])}">Pre-Save</a>'
+                # auf der Domain music.imusician.pro schreibt; die Rueckleitseite
+                # /presave/spotify/ liest das wieder aus. Von geisburgrecords.com aus
+                # laesst sich dieser Eintrag nicht setzen, fremder localStorage ist
+                # gesperrt.
+                #
+                # Ich hatte die OAuth-Links trotzdem einmal direkt gesetzt. Christians
+                # Test landete daraufhin bei HIMMEL, BABY statt bei "c" — dem Release,
+                # das derselbe Browser zuletzt auf iMusicians Seite offen hatte. Genau
+                # der Fehler, den der Absatz darueber vorhersagt. Also: der Besucher geht
+                # ueber die iMusician-Seite, dort waehlt er den Dienst, dort passiert der
+                # Klick. Ein eigener Pre-Save braeuchte eine eigene Spotify-App und einen
+                # Dienst, der die Tokens bis zum Release-Tag haelt.
+                buttons = (f'            <a class="listen-btn" href="{html.escape(r["presave"])}">'
+                           f'Pre-Save</a>')
                 if r.get("note"):
                     buttons += (f'\n            <p class="listen-note">'
                                 f'<span class="listen-note-date">{html.escape(r["note"])}</span></p>')
