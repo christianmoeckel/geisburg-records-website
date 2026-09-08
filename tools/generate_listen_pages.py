@@ -142,9 +142,15 @@ def main():
                 # drueben. Ein echter eigener Pre-Save braucht eine eigene Spotify-App und einen
                 # Dienst, der die Tokens haelt und am Release-Tag speichert.
                 dienste = r.get("presave_services") or []
+                # presave_links traegt die ECHTEN OAuth-Ziele, so wie sie auf der
+                # iMusician-Seite stehen (scripts/51_presave_links.py holt sie). Damit
+                # springt der Besucher direkt in den Spotify- bzw. Deezer-Login, statt
+                # erst auf die Zwischenseite. Fehlt der Eintrag, bleibt es beim alten
+                # Weg ueber die Release-Page.
+                ziele = r.get("presave_links") or {}
                 if dienste:
                     buttons = "\n".join(
-                        f'            <a class="listen-btn" href="{html.escape(r["presave"])}">'
+                        f'            <a class="listen-btn" href="{html.escape(ziele.get(d) or r["presave"])}">'
                         f'<span class="ic">{ICONS.get(d, "")}</span>Pre-Save on {DIENSTNAMEN.get(d, d.title())}</a>'
                         for d in dienste)
                 else:

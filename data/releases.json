@@ -13,7 +13,11 @@
       "presave_services": [
         "spotify",
         "deezer"
-      ]
+      ],
+      "presave_links": {
+        "spotify": "https://accounts.spotify.com/authorize?response_type=code&client_id=089f7b64ea634ac696028a96cd1266ae&scope=user-library-modify,user-read-email&redirect_uri=https%3A%2F%2Fmusic.imusician.pro%2Fpresave%2Fspotify%2F",
+        "deezer": "https://connect.deezer.com/oauth/auth.php?app_id=531842&redirect_uri=https%3A%2F%2Fmusic.imusician.pro%2Fpresave%2Fdeezer%2F&perms=basic_access,email,offline_access,manage_library"
+      }
     },
     {
       "title": "HOPELESS, ROMANTIC",
@@ -27,7 +31,11 @@
       "presave_services": [
         "spotify",
         "deezer"
-      ]
+      ],
+      "presave_links": {
+        "spotify": "https://accounts.spotify.com/authorize?response_type=code&client_id=089f7b64ea634ac696028a96cd1266ae&scope=user-library-modify,user-read-email&redirect_uri=https%3A%2F%2Fmusic.imusician.pro%2Fpresave%2Fspotify%2F",
+        "deezer": "https://connect.deezer.com/oauth/auth.php?app_id=531842&redirect_uri=https%3A%2F%2Fmusic.imusician.pro%2Fpresave%2Fdeezer%2F&perms=basic_access,email,offline_access,manage_library"
+      }
     },
     {
       "title": "you keep calling my name",
