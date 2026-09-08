@@ -22,17 +22,35 @@ CSSV = _h.md5((ROOT / "style.css").read_bytes()).hexdigest()[:8]
 def main():
     rel = json.loads((ROOT / "data" / "releases.json").read_text())["releases"]
     cfg = json.loads((ROOT / "data" / "links.json").read_text())
-    newest = next(r for r in rel if not r.get("note"))  # nur RELEASED im Slot
-    tag = "NEW RELEASE"
-    sub = "listen everywhere"
-    release_card = f"""        <a class="bio-release" href="listen/{newest['slug']}.html">
-            <img src="{html.escape(newest['cover'])}" alt="Cover">
+    # Oben stehen zuerst die ANSTEHENDEN Releases mit Pre-Save, darunter der neueste
+    # veroeffentlichte. Vorher zeigte die Seite ausschliesslich Veroeffentlichtes, ein
+    # Link-in-Bio soll aber genau das bewerben, was noch kommt (Christian 08.09.2026).
+    #
+    # Die Karte fuehrt auf unsere EIGENE listen-Seite, nicht auf music.imusician.pro.
+    # Das ist kein Umweg, sondern Absicht: die Pre-Save-Knoepfe dort zeigen bereits
+    # direkt auf iMusician, und sie MUESSEN das auch. Die Zuordnung eines Pre-Saves
+    # laeuft ueber localStorage auf music.imusician.pro; ein von hier nachgebauter
+    # Spotify-Knopf sieht richtig aus und der Pre-Save geht still verloren (ausfuehrlich
+    # in tools/generate_listen_pages.py).
+    def karte(r, tag, sub):
+        return f"""        <a class="bio-release" href="listen/{r['slug']}.html">
+            <img src="{html.escape(r['cover'])}" alt="Cover">
             <div>
-                <div class="bio-tag">{tag}</div>
-                <div class="bio-release-title">{html.escape(newest['artist'])} ~ {html.escape(newest['title'])}</div>
+                <div class="bio-tag">{html.escape(tag)}</div>
+                <div class="bio-release-title">{html.escape(r['artist'])} ~ {html.escape(r['title'])}</div>
                 <div class="bio-release-sub">{html.escape(sub)}</div>
             </div>
         </a>"""
+
+    karten = []
+    for r in rel:
+        if r.get("presave") and r.get("note"):
+            # note traegt das Datum als Freitext ("out 30.09.2026"), das ist die einzige
+            # Stelle, an der es steht — also wird es das Untertitel-Label.
+            karten.append(karte(r, "PRE-SAVE", r["note"]))
+    newest = next(r for r in rel if not r.get("note"))
+    karten.append(karte(newest, "NEW RELEASE", "listen everywhere"))
+    release_card = "\n".join(karten)
     buttons = "\n".join(
         f'        <a class="listen-btn bio-btn" href="{html.escape(l["url"])}">{html.escape(l["label"])}</a>' 
         for l in cfg["links"])
@@ -66,7 +84,10 @@ def main():
     d = ROOT / "links"
     d.mkdir(exist_ok=True)
     (d / "index.html").write_text(sub)
-    print(f"links.html + links/index.html: Top = {newest['artist']} ~ {newest['title']} [{tag}] + {len(cfg['links'])} Links")
+    vorab = [r for r in rel if r.get("presave") and r.get("note")]
+    print(f"links.html + links/index.html: {len(vorab)} Pre-Save-Karten "
+          f"({', '.join(r['title'] for r in vorab) or 'keine'}), dann "
+          f"{newest['artist']} ~ {newest['title']}, + {len(cfg['links'])} Links")
 
 if __name__ == "__main__":
     main()

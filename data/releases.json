@@ -2,6 +2,20 @@
   "_doku": "Quelle des Release-Grids auf index.html. Array-Reihenfolge = Anzeige-Reihenfolge (neueste oben). 'bandcamp': true => tools/generate_index.py sucht den Titel live auf geisburgrecords.bandcamp.com/music und setzt den Link, sobald published (vorher erscheint der Eintrag ohne Link). 'bandcamp_title' überschreibt den Match-Titel. 'links' = feste Zusatz-/Fallback-Links.",
   "releases": [
     {
+      "title": "c",
+      "artist": "Mona Rowey",
+      "cover": "assets/cover_c-min.jpg",
+      "slug": "c",
+      "isrc": "CH6542754766",
+      "note": "out 30.09.2026",
+      "presave": "https://music.imusician.pro/a/yBv9-PW7/",
+      "upc": "4071624180665",
+      "presave_services": [
+        "spotify",
+        "deezer"
+      ]
+    },
+    {
       "title": "HOPELESS, ROMANTIC",
       "artist": "syn",
       "cover": "assets/cover_hopeless_romantic-min.jpg",
