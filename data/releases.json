@@ -21,13 +21,14 @@
       "cover": "assets/cover_hopeless_romantic-min.jpg",
       "slug": "hopeless-romantic",
       "isrc": "CH6542747071",
-      "note": "out 24.09.2026",
-      "presave": "https://music.imusician.pro/a/lNAb5Hwy/",
       "upc": "4071624147552",
-      "presave_services": [
-        "spotify",
-        "deezer"
-      ]
+      "bandcamp": true,
+      "songlink": "https://song.link/de/i/6806301860",
+      "applemusic": "https://geo.music.apple.com/de/album/_/6806301559?i=6806301860&mt=1&app=music",
+      "spotify": "https://open.spotify.com/track/67V2xRw6u3v9sMaaRzPaf7",
+      "deezer": "https://www.deezer.com/track/4248933391",
+      "amazonmusic": "https://music.amazon.de/albums/B0HGRCRDYM",
+      "youtube": "https://www.youtube.com/playlist?list=OLAK5uy_nTLNKDKbBp-XQM1m_6X399Tw48BvQg_QI"
     },
     {
       "title": "you keep calling my name",
