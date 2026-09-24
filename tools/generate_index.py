@@ -131,6 +131,7 @@ def main():
     <div class="impressum">
         <p>info@geisburgrecords.com</p>
     </div>
+<script src="/stats.js" defer></script>
 </body>
 
 </html>

@@ -95,6 +95,7 @@ def seite(a: dict, rel: dict, prefix: str) -> str:
     <div class="impressum">
         <a href="{prefix}index.html"><img class="listen-footer-logo" src="{prefix}assets/logo-upscaled-hochgeschoben.png" alt="Geisburg Records"></a>
     </div>
+<script src="/stats.js" defer></script>
 </body>
 
 </html>

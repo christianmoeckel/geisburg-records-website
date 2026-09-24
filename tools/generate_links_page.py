@@ -8,10 +8,9 @@ Rest aus data/links.json. Stil = listen-Pages (Smartlink-Optik).
 # geisburgrecords.goatcounter.com. Der Account existiert nicht mehr - der Endpunkt
 # antwortet 400 "no site at this domain". Gezaehlt wurde also laengst nichts; jeder
 # Seitenaufruf lud nur ein Fremdscript und schickte einen Request ins Leere. Die Zeile
-# ist deshalb raus. Wer wieder zaehlen will, legt das Konto neu an und fuegt im
-# <body> wieder ein:
-#   <script data-goatcounter="https://<konto>.goatcounter.com/count" async
-#           src="//gc.zgo.at/count.js"></script>
+# ist deshalb raus. Seit 24.09.2026 zaehlt stattdessen der eigene Zaehler: /stats.js,
+# Gegenstueck geisburg-pipeline/apps_script/webstats.gs, Auswertung ueber die
+# trackwerk-Web-App mit action=statsreport. Ohne Cookies, ohne IP, deshalb ohne Banner.
 
 import html, json
 from pathlib import Path
@@ -79,6 +78,7 @@ def main():
 {buttons}
         </div>
     </main>
+<script src="/stats.js" defer></script>
 </body>
 
 </html>
