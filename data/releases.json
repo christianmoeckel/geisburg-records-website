@@ -13,7 +13,9 @@
       "spotify": "https://open.spotify.com/track/5br0pOPfFSpscQ9xfMKspa",
       "deezer": "https://www.deezer.com/track/4273232342",
       "amazonmusic": "https://music.amazon.de/albums/B0HJ67YL48",
-      "youtube": "https://www.youtube.com/watch?v=miqUbB6bVTM&list=OLAK5uy_neacLuTPoXeh8mqycRj43HZSgGHKz83P0&index=1"
+      "youtube": "https://www.youtube.com/watch?v=miqUbB6bVTM&list=OLAK5uy_neacLuTPoXeh8mqycRj43HZSgGHKz83P0&index=1",
+      "bandcamp": true,
+      "bandcamp_url": "https://geisburgrecords.bandcamp.com/track/c"
     },
     {
       "title": "HOPELESS, ROMANTIC",
@@ -29,7 +31,8 @@
       "deezer": "https://www.deezer.com/track/4248933391",
       "amazonmusic": "https://music.amazon.de/albums/B0HGRCRDYM",
       "youtube": "https://www.youtube.com/watch?v=80R4ZhSOXF4&list=OLAK5uy_nTLNKDKbBp-XQM1m_6X399Tw48BvQg_QI&index=1",
-      "bandcamp_url": "https://geisburgrecords.bandcamp.com/track/hopeless-romantic"
+      "bandcamp_url": "https://geisburgrecords.bandcamp.com/track/hopeless-romantic",
+      "soundcloud": "https://soundcloud.com/geisburgrecords/hopeless-romantic"
     },
     {
       "title": "you keep calling my name",
