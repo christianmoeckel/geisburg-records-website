@@ -93,7 +93,7 @@ def main():
             f'                <a href="{html.escape(u)}"{" class=\"mv-line\"" if lab == "Music Video" else ""}>{html.escape(lab)}</a>' for lab, u in links
         )
         cards.append(f"""        <div class="release">
-            <img src="{html.escape(r['cover'])}" alt="Release Cover">
+            <img src="{html.escape(r['cover'])}" alt="Release Cover" width="800" height="800" decoding="async"{' loading="lazy"' if len(cards) >= 3 else ''}>
             <div class="release-info">
                 <div class="release-title">{html.escape(r['title'])}</div>
                 <div class="release-artist">{html.escape(r['artist'])}</div>

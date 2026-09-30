@@ -32,6 +32,7 @@ header {
 
 .release img {
     width: 100%;
+    height: auto; /* width/height im HTML reservieren nur das Seitenverhaeltnis */
     max-width: 300px;
     display: block;
     margin: 0 auto;
