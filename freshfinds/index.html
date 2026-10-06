@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../style.css?v=78c220fe">
+    <link rel="stylesheet" href="../style.css?v=8acc311a">
     <title>FRESH FINDS ~ Berlin | GEISBURG RECORDS</title>
     <meta property="og:title" content="FRESH FINDS ~ Berlin">
     <meta property="og:description" content="only underground berlin sounds">
@@ -40,6 +40,13 @@
                 navigator.sendBeacon(STATS, b);
             } catch (err) {}
         }
+        // Welche Anzeige: utm_content aus dem Anzeigenlink (Meta setzt {{ad.name}} ein).
+        var AD = (function () {
+            try {
+                return (new URLSearchParams(location.search).get('utm_content') || '')
+                    .replace(/[^A-Za-z0-9_.-]/g, '').slice(0, 40);
+            } catch (err) { return ''; }
+        })();
         fbq('set', 'autoConfig', false, '1337510651776548');
         fbq('optOut', '1337510651776548', 'ESTRuleEngine');
         fbq('init', '1337510651776548');
@@ -55,9 +62,10 @@
     <main class="listen-page">
         <div class="listen-title">FRESH FINDS ~ Berlin</div>
         <div class="listen-artist">only underground berlin sounds</div>
-        <img class="listen-cover" src="../assets/freshfinds_cover.jpg" alt="FRESH FINDS ~ Berlin Playlist Cover">
+        <a class="spotify" href="https://open.spotify.com/playlist/1owAFr1EJkehkSdwPWNy9g" data-a="intent://open.spotify.com/playlist/1owAFr1EJkehkSdwPWNy9g#Intent;scheme=https;package=com.spotify.music;S.browser_fallback_url=https%3A%2F%2Fopen.spotify.com%2Fplaylist%2F1owAFr1EJkehkSdwPWNy9g;end" style="display:block"
+           aria-label="FRESH FINDS ~ Berlin auf Spotify"><img class="listen-cover" src="../assets/freshfinds_cover.jpg" alt="FRESH FINDS ~ Berlin Playlist Cover"></a>
         <div class="listen-buttons">
-            <a class="listen-btn" id="play" href="https://open.spotify.com/playlist/1owAFr1EJkehkSdwPWNy9g">Play on Spotify</a>
+            <a class="listen-btn spotify" id="play" href="https://open.spotify.com/playlist/1owAFr1EJkehkSdwPWNy9g" data-a="intent://open.spotify.com/playlist/1owAFr1EJkehkSdwPWNy9g#Intent;scheme=https;package=com.spotify.music;S.browser_fallback_url=https%3A%2F%2Fopen.spotify.com%2Fplaylist%2F1owAFr1EJkehkSdwPWNy9g;end">Play on Spotify</a>
         </div>
 
     </main>
@@ -65,15 +73,34 @@
         <a href="../index.html"><img class="listen-footer-logo" src="../assets/logo-upscaled-hochgeschoben.png" alt="Geisburg Records"></a>
     </div>
     <script>
-        hit('pageview', '');
+        hit('pageview', AD);
 
-        // ViewContent gilt AUSSCHLIESSLICH dem Spotify-Playlist-Link (Christian 06.08.).
-        document.getElementById('play').addEventListener('click', function () {
-            var k = evid();
-            fbq('track', 'ViewContent', {content_name: 'fresh-finds-berlin-1', content_type: this.getAttribute('href')}, {eventID: k});
-            beacon('ViewContent', k, {content_name: 'fresh-finds-berlin-1', content_type: this.getAttribute('href')});
-            hit('click', 'spotify');
-        });
+        // ViewContent gilt AUSSCHLIESSLICH dem Spotify-Playlist-Link (Christian 06.08.),
+        // Knopf und Cover sind beide dieser Link.
+        var letzter = 0;
+        function klick(e) {
+            var jetzt = Date.now();
+            if (jetzt - letzter < 800) { e.preventDefault(); return; }
+            letzter = jetzt;
+            var a = e.currentTarget, href = a.getAttribute('href'), k = evid();
+            fbq('track', 'ViewContent', {content_name: 'fresh-finds-berlin-1', content_type: href}, {eventID: k});
+            beacon('ViewContent', k, {content_name: 'fresh-finds-berlin-1', content_type: href});
+            // Ausgang erst melden, wenn er feststeht: verdeckt = App, Seitenwechsel = Web.
+            var gemeldet = false, zu = AD ? '|' + AD : '';
+            function melde(art) { if (!gemeldet) { gemeldet = true; hit('click', 'spotify' + art + zu); } }
+            document.addEventListener('visibilitychange', function () { if (document.hidden) melde('-app'); });
+            window.addEventListener('pagehide', function () { melde('-web'); });
+            setTimeout(function () { melde(''); }, 4000);
+            var intent = a.getAttribute('data-a');
+            if (intent && /Android/i.test(navigator.userAgent || '')) {
+                e.preventDefault();
+                location.href = intent;
+                // Manche In-App-Browser schlucken intent:// still. Dann nach 1,5 s ins Web.
+                setTimeout(function () { if (!document.hidden) location.href = href; }, 1500);
+            }
+        }
+        var links = document.querySelectorAll('a.spotify');
+        for (var i = 0; i < links.length; i++) links[i].addEventListener('click', klick);
 
     </script>
 </body>

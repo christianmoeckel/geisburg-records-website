@@ -19,6 +19,21 @@ Weiterhin drin, seit v3:
    erfasst. Kein Cookie, keine IP, nur Pfad/Ereignis/Ziel/Herkunftsdomain.
 2. ViewContent feuert ausschliesslich auf dem Spotify-Playlist-Link, nirgends sonst.
 
+v5 (07.10.2026, Fresh-Finds-Meta-Overhaul): Die eigene Seite verlor gegenueber dem
+SubmitHub-Link rund ein Fuenftel bis ein Viertel der Spotify-Klicks (75 % der Besucher
+klickten dort weiter, hier 53 %). Nachgebaut, was SubmitHub besser macht:
+1. Cover ist klickbar, nicht nur der Knopf.
+2. App-Uebergabe: auf Android ein Intent-Link auf com.spotify.music mit
+   browser_fallback_url, sonst oeffnet der Instagram-Browser die Spotify-Webseite, auf der
+   niemand eingeloggt ist und niemand speichern kann. iOS bleibt beim normalen Link
+   (Universal Link), wie bei SubmitHub; spotify:-URIs scheitern dort ohne App mit Fehler.
+3. Je Klick EIN Eintrag im eigenen Zaehler, mit Ausgang: spotify-app (Seite wurde
+   verdeckt, die App ging auf), spotify-web (Seitenwechsel im Browser) oder spotify
+   (nichts erkannt). Dazu die Anzeige aus utm_content, z. B. spotify-app|ff1_A1. Damit
+   gibt es je Anzeige eine Zahl, die fast schon ein Save ist, denn speichern geht nur in
+   der App.
+ViewContent feuert unveraendert bei jedem Klick auf einen Spotify-Link (Knopf oder Cover).
+
 Conversions API: SubmitHub schickt Klicks zusaetzlich server-seitig (eigener /api-Beacon).
 GitHub Pages hat keinen Server, unser Beacon ist vorbereitet aber AUS, bis der Relay auf
 dem HQ-Server steht (geisburg-pipeline/server/capi_relay.py; dann CAPI_ENDPOINT auf
@@ -33,6 +48,10 @@ ROOT = Path(__file__).resolve().parent.parent
 CSSV = hashlib.md5((ROOT / "style.css").read_bytes()).hexdigest()[:8]
 
 PLAYLIST_URL = "https://open.spotify.com/playlist/1owAFr1EJkehkSdwPWNy9g"
+# Android: direkt in die Spotify-App, ohne App zurueck auf die https-Adresse.
+INTENT = ("intent://open.spotify.com/playlist/1owAFr1EJkehkSdwPWNy9g#Intent;scheme=https;"
+          "package=com.spotify.music;S.browser_fallback_url="
+          "https%3A%2F%2Fopen.spotify.com%2Fplaylist%2F1owAFr1EJkehkSdwPWNy9g;end")
 PIXEL_ID = "1337510651776548"          # Meta-Pixel, gleiche ID wie im SubmitHub-Link
 CONTENT_NAME = "fresh-finds-berlin-1"  # SubmitHub-Signatur beibehalten (Audience-Kontinuitaet)
 COVER = "assets/freshfinds_cover.jpg"
@@ -90,6 +109,13 @@ def page(prefix: str) -> str:
                 navigator.sendBeacon(STATS, b);
             }} catch (err) {{}}
         }}
+        // Welche Anzeige: utm_content aus dem Anzeigenlink (Meta setzt {{{{ad.name}}}} ein).
+        var AD = (function () {{
+            try {{
+                return (new URLSearchParams(location.search).get('utm_content') || '')
+                    .replace(/[^A-Za-z0-9_.-]/g, '').slice(0, 40);
+            }} catch (err) {{ return ''; }}
+        }})();
         fbq('set', 'autoConfig', false, '{PIXEL_ID}');
         fbq('optOut', '{PIXEL_ID}', 'ESTRuleEngine');
         fbq('init', '{PIXEL_ID}');
@@ -105,9 +131,10 @@ def page(prefix: str) -> str:
     <main class="listen-page">
         <div class="listen-title">FRESH FINDS ~ Berlin</div>
         <div class="listen-artist">{SUBTITLE}</div>
-        <img class="listen-cover" src="{prefix}{COVER}" alt="FRESH FINDS ~ Berlin Playlist Cover">
+        <a class="spotify" href="{PLAYLIST_URL}" data-a="{INTENT}" style="display:block"
+           aria-label="FRESH FINDS ~ Berlin auf Spotify"><img class="listen-cover" src="{prefix}{COVER}" alt="FRESH FINDS ~ Berlin Playlist Cover"></a>
         <div class="listen-buttons">
-            <a class="listen-btn" id="play" href="{PLAYLIST_URL}">Play on Spotify</a>
+            <a class="listen-btn spotify" id="play" href="{PLAYLIST_URL}" data-a="{INTENT}">Play on Spotify</a>
         </div>
 
     </main>
@@ -115,15 +142,34 @@ def page(prefix: str) -> str:
         <a href="{prefix}index.html"><img class="listen-footer-logo" src="{prefix}assets/logo-upscaled-hochgeschoben.png" alt="Geisburg Records"></a>
     </div>
     <script>
-        hit('pageview', '');
+        hit('pageview', AD);
 
-        // ViewContent gilt AUSSCHLIESSLICH dem Spotify-Playlist-Link (Christian 06.08.).
-        document.getElementById('play').addEventListener('click', function () {{
-            var k = evid();
-            fbq('track', 'ViewContent', {{content_name: '{CONTENT_NAME}', content_type: this.getAttribute('href')}}, {{eventID: k}});
-            beacon('ViewContent', k, {{content_name: '{CONTENT_NAME}', content_type: this.getAttribute('href')}});
-            hit('click', 'spotify');
-        }});
+        // ViewContent gilt AUSSCHLIESSLICH dem Spotify-Playlist-Link (Christian 06.08.),
+        // Knopf und Cover sind beide dieser Link.
+        var letzter = 0;
+        function klick(e) {{
+            var jetzt = Date.now();
+            if (jetzt - letzter < 800) {{ e.preventDefault(); return; }}
+            letzter = jetzt;
+            var a = e.currentTarget, href = a.getAttribute('href'), k = evid();
+            fbq('track', 'ViewContent', {{content_name: '{CONTENT_NAME}', content_type: href}}, {{eventID: k}});
+            beacon('ViewContent', k, {{content_name: '{CONTENT_NAME}', content_type: href}});
+            // Ausgang erst melden, wenn er feststeht: verdeckt = App, Seitenwechsel = Web.
+            var gemeldet = false, zu = AD ? '|' + AD : '';
+            function melde(art) {{ if (!gemeldet) {{ gemeldet = true; hit('click', 'spotify' + art + zu); }} }}
+            document.addEventListener('visibilitychange', function () {{ if (document.hidden) melde('-app'); }});
+            window.addEventListener('pagehide', function () {{ melde('-web'); }});
+            setTimeout(function () {{ melde(''); }}, 4000);
+            var intent = a.getAttribute('data-a');
+            if (intent && /Android/i.test(navigator.userAgent || '')) {{
+                e.preventDefault();
+                location.href = intent;
+                // Manche In-App-Browser schlucken intent:// still. Dann nach 1,5 s ins Web.
+                setTimeout(function () {{ if (!document.hidden) location.href = href; }}, 1500);
+            }}
+        }}
+        var links = document.querySelectorAll('a.spotify');
+        for (var i = 0; i < links.length; i++) links[i].addEventListener('click', klick);
 
     </script>
 </body>
@@ -137,7 +183,7 @@ def main():
     sub = ROOT / "freshfinds"
     sub.mkdir(exist_ok=True)
     (sub / "index.html").write_text(page("../"))
-    print("freshfinds.html + freshfinds/index.html geschrieben (v4)")
+    print("freshfinds.html + freshfinds/index.html geschrieben (v5)")
 
 
 if __name__ == "__main__":
