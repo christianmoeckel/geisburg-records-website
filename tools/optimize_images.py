@@ -14,7 +14,10 @@ Was das Skript tut, je Bild, das irgendeine Seite einbindet:
   mit blossem Auge nicht unterscheidbar. Faellt sie durch, steigt die Qualitaet in Stufen
   (88, 92, 95); bei koernigen Covern endet das bei 95, wo JPEG-Artefakte unsichtbar sind.
 
-Idempotent: ein zweiter Lauf findet nichts mehr zu tun. Die Originale stehen in der
+Idempotent: ein zweiter Lauf findet nichts mehr zu tun. Dafuer sorgt MIN_ERSPARNIS: ein schon
+optimiertes JPEG wird beim erneuten Kodieren nur um Promille kleiner, verliert dabei aber jedes
+Mal etwas Qualitaet (Generationsverlust). Bis 22.10.2026 fehlte diese Schwelle, und jeder Lauf
+hat 34 laengst optimierte Cover erneut kodiert, um 0,1 Prozent zu sparen. Die Originale stehen in der
 Git-Historie und als 3000-px-Cover in der Drive-Ablage.
 
 Aufruf:  python3 tools/optimize_images.py          nur messen
@@ -34,6 +37,7 @@ FOTO_KANTE = 1600
 LOGO_KANTE = 512      # dreifache Anzeigegroesse (max 170 px), scharf auch auf Retina
 QUALITAET = 82
 MIN_PSNR = 38.0
+MIN_ERSPARNIS = 0.10   # ersetzt wird nur, wenn die Datei um mindestens 10 Prozent kleiner wird
 
 
 def eingebundene_bilder():
@@ -91,7 +95,7 @@ def bearbeite(p, laufen):
             puffer = io.BytesIO()
             klein.save(puffer, "PNG", optimize=True)
             daten = puffer.getvalue()
-            if len(daten) >= alt:
+            if len(daten) > alt * (1 - MIN_ERSPARNIS):
                 return (p, alt, alt, None, "schon optimal")
             if laufen:
                 p.write_bytes(daten)
@@ -116,7 +120,7 @@ def bearbeite(p, laufen):
         wert = psnr(bild, Image.open(io.BytesIO(daten)))
         if wert >= MIN_PSNR:
             break
-    if len(daten) >= alt:
+    if len(daten) > alt * (1 - MIN_ERSPARNIS):
         return (p, alt, alt, wert, "schon optimal")
     if p.suffix.lower() == ".png":
         return (p, alt, len(daten), wert, "PNG -> JPEG noetig, Verweise anpassen")

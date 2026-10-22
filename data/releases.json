@@ -2,6 +2,22 @@
   "_doku": "Quelle des Release-Grids auf index.html. Array-Reihenfolge = Anzeige-Reihenfolge (neueste oben). 'bandcamp': true => tools/generate_index.py sucht den Titel live auf geisburgrecords.bandcamp.com/music und setzt den Link, sobald published (vorher erscheint der Eintrag ohne Link). 'bandcamp_title' überschreibt den Match-Titel. 'links' = feste Zusatz-/Fallback-Links.",
   "releases": [
     {
+      "title": "halloween",
+      "artist": "Fritzi",
+      "cover": "assets/cover_halloween-min.jpg",
+      "slug": "halloween",
+      "isrc": "CH6542774039",
+      "upc": "4071624258708",
+      "bandcamp": true,
+      "songlink": "https://song.link/de/i/6820956939",
+      "applemusic": "https://geo.music.apple.com/de/album/_/6820956936?i=6820956939&mt=1&app=music",
+      "spotify": "https://open.spotify.com/track/5ROtUUNWQgYOx6YppQ00n5",
+      "deezer": "https://www.deezer.com/track/4337855932",
+      "youtube": "https://www.youtube.com/watch?v=bctbL2aezvo&list=OLAK5uy_n36FgBMpDZk32U08_EHh0xc8z1fgIedOE&index=1",
+      "bandcamp_url": "https://geisburgrecords.bandcamp.com/track/halloween",
+      "soundcloud": "https://soundcloud.com/geisburgrecords/halloween"
+    },
+    {
       "title": "c",
       "artist": "Mona Rowey",
       "cover": "assets/cover_c-min.jpg",
