@@ -134,7 +134,7 @@ def page(prefix: str) -> str:
         <a class="spotify" href="{PLAYLIST_URL}" data-a="{INTENT}" style="display:block"
            aria-label="FRESH FINDS ~ Berlin auf Spotify"><img class="listen-cover" src="{prefix}{COVER}" alt="FRESH FINDS ~ Berlin Playlist Cover"></a>
         <div class="listen-buttons">
-            <a class="listen-btn spotify" id="play" href="{PLAYLIST_URL}" data-a="{INTENT}">Play on Spotify</a>
+            <a class="listen-btn spotify" id="play" href="{PLAYLIST_URL}" data-a="{INTENT}" aria-label="Play auf Spotify">Play</a>
         </div>
 
     </main>
