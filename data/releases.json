@@ -2,6 +2,16 @@
   "_doku": "Quelle des Release-Grids auf index.html. Array-Reihenfolge = Anzeige-Reihenfolge (neueste oben). 'bandcamp': true => tools/generate_index.py sucht den Titel live auf geisburgrecords.bandcamp.com/music und setzt den Link, sobald published (vorher erscheint der Eintrag ohne Link). 'bandcamp_title' überschreibt den Match-Titel. 'links' = feste Zusatz-/Fallback-Links.",
   "releases": [
     {
+      "title": "Schall & Rauch",
+      "artist": "Hagel",
+      "cover": "assets/cover_schall-rauch-min.jpg",
+      "slug": "schall-rauch",
+      "isrc": "CHH212607091",
+      "upc": "4071624327268",
+      "note": "out 04.12.2026",
+      "presave": "https://music.imusician.pro/a/xUXAwmqo/"
+    },
+    {
       "title": "halloween",
       "artist": "Fritzi",
       "cover": "assets/cover_halloween-min.jpg",
